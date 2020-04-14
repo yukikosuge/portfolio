@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>キョウリツデイサービス</title>
+
+  <style type="text/css">
+    /*HTML5 Doctor Reset CSSをアレンジして使用しています。*/
+    /*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+    html,
+    body,
+    div,
+    span,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    abbr,
+    address,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    samp,
+    small,
+    strong,
+    sub,
+    sup,
+    var,
+    b,
+    i,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      vertical-align: baseline;
+      background: transparent;
+    }
+
+    body {
+      /* プロジェクトによって変動 */
+      min-width: 1000px;
+      color: #000;
+      line-height: 1.6;
+      font-weight: 400;
+      font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+      width: 100%;
+      font-smoothing: antialiased;
+      font-variant-numeric: tabular-nums;
+      /* safari hover対策 */
+      -webkit-font-smoothing: antialiased;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+      background-color: #ff9;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+      background-color: #ff9;
+      color: #000;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    del {
+      text-decoration: line-through;
+    }
+
+    abbr[title],
+    dfn[title] {
+      border-bottom: 1px dotted;
+      cursor: help;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* change border colour to suit your needs */
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #cccccc;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    input,
+    select {
+      vertical-align: middle;
+    }
+
+    img {
+      vertical-align: bottom;
+      line-height: 1.0;
+    }
+
+    button {
+      line-height: 1.0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      appearance: none;
+    }
+
+    .topics dl {
+      padding: 35px 0;
+      border-bottom: 2px solid #4D4D4D;
+    }
+
+    .topics dt {
+      padding-bottom: 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .topics dt {
+        clear: left;
+        float: left;
+        width: 10%;
+      }
+
+      .topics dd {
+        margin-left: 11%;
+      }
+
+      body {
+        background-image: url(img/texture982397_TP_V.jpg);
+      }
+
+      #all {
+        margin: 0 auto;
+        width: 1024px;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      nav {
+        text-align: center;
+        display: inline;
+        /* [disabled]float: left; */
+      }
+
+      nav ul li {
+        float: left;
+        margin-top: 20px;
+      }
+
+      .navleft {
+        margin-left: 3px;
+      }
+
+      .topics {
+        margin-top: 30px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      box {
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .box1 {
+        text-align: right;
+        display: block;
+        float: left;
+        margin-left: 70px;
+        margin-top: 30px;
+      }
+
+      .box2 {
+        margin-left: 250px;
+        margin-top: 30px;
+      }
+
+      .gotop {
+        margin-top: 50px;
+        text-align: right;
+      }
+
+      footer {
+        width: 1024px;
+        text-align: center;
+        background-color: #ADADAD;
+        height: 100px;
+        padding-top: 50px;
+      }
+
+      footer p a {
+        color: #000000;
+      }
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="all">
+    <header>
+      <div class="logo">
+        <p><img src="img/logo.png" width="143" height="60" alt="" /></p>
+      </div>
+      <nav>
+        <ul>
+          <li> <a href="#"><img src="img/btn-on-home.png" alt="" width="145" height="42" class="navleft"
+                id="btn1" /></a></li>
+          <li><a href="#"><img src="img/btn-on-annai.png" alt="" width="145" height="42" /></a></li>
+          <li><a href="#"><img src="img/btn-on-itiniti.png" alt="" width="145" height="42" /></a></li>
+          <li><a href="#"><img src="img/btn-on-osyokuzi.png" alt="" width="145" height="42" /></a></li>
+          <li><a href="#"><img src="img/btn-on-map.png" alt="" width="145" height="42" /></a></li>
+          <li><a href="#"><img src="img/btn-on-ryoukin.png" alt="" width="145" height="42" /></a></li>
+          <li><a href="#"><img src="img/btn-on-nagare.png" alt="" width="145" height="42" /></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="mainimg"><img src="img/main.jpg" width="1024" height="640" alt="" /></p>
+      <p>
+        <div class="topics">
+          <dl>
+            <h2>
+              <dt style="color: blue; font-size: 20px;"><strong>新着情報</strong></dt>
+            </h2>
+          </dl>
+          <dl>
+            <dt>20180101</dt>
+            <dd>新着情報の内容が入ります。</dd>
+          </dl>
+          <dl>
+            <dt>20180101</dt>
+            <dd>新着情報の内容が入ります。</dd>
+          </dl>
+          <dl>
+            <dt>20180101</dt>
+            <dd>新着情報の内容が入ります。</dd>
+          </dl>
+        </div>
+      </p>
+      <div class="box">
+        <p><img src="img/carendar.png" alt="" width="294" height="346" class="box1" /><img src="img/スタッフ募集バナー.jpg"
+            alt="" width="330" height="100" class="box2" /></p>
+        <p><img src="img/無料体験バナー.jpg" alt="" width="330" height="100" class="box2" /></p>
+        <p><img src="img/バナー募集バナー.jpg" alt="" width="330" height="100" class="box2" /></p>
+      </div>
+      <p class="gotop"><a href="#all"><img src="img/pagetop.png" width="65" height="65" alt="" /></a></p>
+
+    </main>
+    <footer>
+      <p><a href="#">施設概要</a>|<a href="#">お問い合わせ</a>|<a href="#">採用情報</a>|<a href="#">個人情報保護方針</a></p><br>
+      <p>Copyright&copy;KosugeYuki.All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

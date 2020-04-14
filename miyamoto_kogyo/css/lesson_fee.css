@@ -1,0 +1,174 @@
+@charset "utf-8";
+#lesson_fee  {
+    width: 100%;
+}
+#lesson_fee h1 {
+	margin: 0 auto;
+	width: 1200px;
+}
+/* CSS Document */
+
+#lesson_fee .inner {
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	border: 5px solid #97be51;
+	padding-top: 22px;
+	max-width: 1100px;
+}
+
+#lesson_fee h2 {
+    font-size: 32px;
+    text-align: center;
+}
+#lesson_fee h3 {
+	font-size: 24px;
+}
+#lesson_fee span {
+    border: 3px;
+    border-bottom-style: solid;
+    border-color: #2fb8d9;
+    width: 300px;
+    display: inline-block;
+}#lesson_fee .text1 {
+    font-size: 17px;
+    display: inline;
+}
+#lesson_fee .text2 {
+    font-size: 28px;
+    display: inline;
+}
+#lesson_fee .text3 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 60px;
+}
+#lesson_fee .charge  {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
+    background-color: #f9f1f6;
+    margin-top: 90px;
+    padding-top: 40px;
+    margin-bottom: 90px;
+}
+#lesson_fee .charge h3 {
+    margin-top: 25px;
+    margin-right: 0;
+    margin-left: 0;
+}
+#lesson_fee .charge .box {
+    width: 1000px;
+    overflow: hidden;
+    margin: 20px auto 0;
+}
+#lesson_fee .charge .box1 {
+    width: 250px;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+}
+#lesson_fee .charge .box1 p {
+    margin-top: 20px;
+}
+#lesson_fee .charge .box2 {
+    margin-left: 125px;
+    width: 250px;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+}
+#lesson_fee .charge .box2 p {
+    margin-top: 20px;
+}
+#lesson_fee .charge .box3 {
+    margin-left: 125px;
+    width: 250px;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+}
+#lesson_fee .charge .box3 p {
+    margin-top: 20px;
+}
+#lesson_fee .charge .box4 {
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+#lesson_fee .charge .box4 p {
+    margin-top: 20px;
+}
+#lesson_fee .charge .box5 {
+    margin-left: 125px;
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+#lesson_fee .charge .box5 p {
+    margin-top: 20px;
+}
+#lesson_fee .charge .box6 {
+    margin-left: 125px;
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+#lesson_fee .charge .box6 p {
+    margin-top: 20px;
+}
+#lesson_fee .text_fee {
+    text-align: center;
+}
+#lesson_fee .text_fee p {
+    margin-top: 30px;
+    margin-bottom: 95px;
+}
+#lesson_fee .terms {
+	border: 3px solid #2fb8d9;
+	margin: 0 auto 105px;
+	border-radius: 20px;
+	width: 300px;
+}
+#lesson_fee .terms h2 {
+	display: block;
+	padding: 26px 0;
+	text-shadow: 0px 0px;
+}
+#lesson_fee .terms a {
+	text-shadow: 0px 0px;
+	text-decoration: none;
+	padding-top: 26px;
+	padding-right: 83px;
+	padding-left: 83px;
+	padding-bottom: 26px;
+	border-radius: 15px;
+	color: #000000;
+	border-style: none;
+	border-width: 3px;
+}
+#lesson_fee .terms a:hover  {
+	background-color: #2FB8D9;
+	transition: 0.5s;
+	color: #FFFFFF;
+}
+
+
+
+#lesson_fee .gotop a {
+	text-decoration: none;
+	color: #000000;
+}
+#lesson_fee .gotop {
+    margin-top: 0;
+    margin-left: auto;
+    text-align: justify;
+    margin-right: 100px;
+}
+#lesson_fee .topic-path li {
+	list-style-type: none;
+	display: inline;
+
+}

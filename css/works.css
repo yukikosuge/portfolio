@@ -1,0 +1,117 @@
+
+#main h2.ttl {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 1.0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+
+#main h4.card-title{
+  font-size: 16px;
+}
+
+#main p.card-text{
+  font-size: 8px;
+}
+
+.work_container{
+  padding: 0 30px;
+  display: inline;
+  /* display: flex; */
+  justify-content: space-around;
+}
+
+.work_items {
+  margin: 0 62px 32px;
+}
+
+#gohome {
+	/* margin-bottom: 20px; */
+	text-align: right;
+	font-size: 14px;
+}
+
+#gohome a {
+  color: #333;
+  text-decoration: none;
+}
+
+#copyright{
+  margin: 0;
+}
+
+/* タブレット向け：760px～960px */
+@media only screen and (min-width: 760px) {
+
+  .socialBtn {
+    position: absolute;
+    top: 202px;
+    right: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .socialBtn img {
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+  }
+
+  #work{
+  margin: 21px 0 25px 0;
+  padding-left: 51px;
+  text-align: left;
+}
+
+  .work_container{
+  padding: 0;
+  /* display: inline; */
+  display: flex;
+  justify-content: space-around;
+}
+
+  .work_items {
+  margin: 0 0 32px 0;
+}
+
+  #main h4.card-title{
+  font-size: 18px;
+}
+
+  #main p.card-text{
+  font-size: 10px;
+}
+}
+
+/* PC向けレイアウトの指定：961px～ */
+@media only screen and (min-width: 961px) {
+.worksinner{
+    max-width: 960px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+  #work {
+    margin-bottom: 60px;
+    padding: 0px;
+}
+
+}
+
+@media only screen and (min-width: 961px) {
+  .socialBtn {
+    position: absolute;
+    top: 208px;
+    right: 10px;
+  }
+
+  .socialBtn img {
+    width: 36px;
+    height: 36px;
+    vertical-align: bottom;
+  }
+}

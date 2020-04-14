@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ほのむ英会話</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+<script>
+		$(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 143) {
+					$('.row2').addClass('fixed');
+					$('.main-img').addClass('fixed');
+				} else {
+					$('.row2').removeClass('fixed');
+					$('.main-img').removeClass('fixed');
+				}
+			})
+			// Nav Toggle Button
+			$('#nav-toggle').click(function() {
+				$('header').toggleClass('open');
+				$('.row2').slideToggle();
+			});
+
+			// navが消える現象対策
+			$(window).on('resize', function() {
+				if ($(window).width() > 740) {
+					$('.row2').attr({
+						'style': 'display:block'
+					});
+				} else {
+					$('.row2').attr({
+						'style': 'display:none'
+					});
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+<header id="header">
+  <div class="wrapper">
+    <div class="row1">
+      <div id="nav-toggle">
+        <div> <span></span> <span></span> <span></span> </div>
+      </div>
+      <div class="logo">
+        <h1><img src="./img/logo.png" alt=""></h1>
+      </div>
+      <div class="contact"> <img src="./img/contact.png" alt=""> </div>
+    </div>
+    <div class="row2">
+      <nav>
+        <ul>
+          <li>コース</li>
+          <li>受講料</li>
+          <li>講師紹介</li>
+          <li>生徒さんの声</li>
+          <li>アクセス</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!--mainのidはページ名-->
+<main id="">
+ 
+</main>
+<footer>
+  <p class="go-top"><a href="#header">ページTOPへ</a></p>
+  <div class="footer-bg">
+    <div class="footer-container">
+      <div class="footer-left">
+        <ul>
+          <li>ほのむ英会話とは</li>
+          <li>コース</li>
+          <li>ホーム</li>
+          <li>講師紹介</li>
+          <li>生徒さんの声</li>
+          <li>アクセス</li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li>よくある質問</li>
+          <li><img src="img/temp-sns-img.png" alt=""></li>
+          <li><img src="img/temp-sns-img.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

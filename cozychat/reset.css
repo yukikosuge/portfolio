@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+/*HTML5 Doctor Reset CSSをアレンジして使用しています。*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+/*不要な物は削除済、元データはテキストデータにあり*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+address,
+small, strong, 
+dl, dt, dd, ol, ul, li,form,
+table,tbody,tr, th, td,aside,
+footer, header, menu, nav,section{
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ /* プロジェクトによって変動 */
+ min-width: 1000px;
+/* color: #000;*/
+ line-height: 1.6;
+ font-weight: 400;
+ font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+ width: 100%;
+ font-smoothing: antialiased;
+ font-variant-numeric: tabular-nums;
+ /* safari hover対策 */
+ -webkit-font-smoothing: antialiased;
+}
+
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+}
+
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+body {
+    margin: 0 auto;
+    text-align: center;
+    width: 934px;
+    background-image: url(img/bgimg.png);
+    background-repeat: repeat;
+}
+
+header {
+    margin: 0 auto;
+}
+.headerleft {
+    float: left;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 28px;
+}
+.headerright  {
+    margin-top: 50px;
+    display: block;
+    text-align: right;
+    float: right;
+    margin-right: 35px;
+}
+nav {
+    margin-left: 0px;
+    padding-left: 0px;
+    clear: both;
+    height: 55px;
+    background-color: #eb7118;
+    padding-top: 0px;
+    margin-top: -0px;
+    width: 100%;
+}
+
+ul li {
+    text-align: center;
+    clear: both;
+    display: inline;
+}
+.sec1 {
+    margin-top: 10px;
+}
+
+.sec1left  {
+    float: left;
+    margin-left: 33px;
+}
+.sec1right {
+    margin-right: 20px;
+}
+
+.sec2left {
+    float: left;
+    margin-top: 30px;
+    margin-left: 33px;
+}
+.sec2right {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.sec3 {
+    margin: 0 auto;
+    width: 934px;
+}
+.box {
+    text-align: right;
+    width: 300px;
+    float: left;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.box1 {
+    display: block;
+    float: left;
+    margin-top: 33px;
+    margin-left: 37px;
+}
+footer {
+    background-color: #e6e6e6;
+    text-align: center;
+    display: block;
+    width: 934px;
+    margin-top: 530px;
+    height: 105px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toppage {
+    float: right;
+    margin-top: 30px;
+    margin-right: 35px;
+}

@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+#instructor {
+  width: 100%;
+}
+#instructor h1 {
+	height: 150px;
+	background-image: url(../img/nav_under.jpg);
+	padding-top: 50px;
+	padding-left: calc((100% - 1000px) / 2);
+	line-height: 50px;
+	background-repeat: no-repeat;
+	color: #fff;
+	background-size: cover;
+	margin-top: 100px;
+}
+#instructor h3 {
+  margin-top: 25px;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+#instructor .box {
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 5px solid #97be51;
+  max-width: 1100px;
+}
+#instructor .inner {
+  margin: 75px 0;
+}
+#instructor .box1 {
+  background-color: rgba(253, 245, 251, 1);
+  overflow: hidden;
+  margin-top: 50px;
+}
+#instructor .box1 h2 {
+  float: left;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+#instructor .box2 {
+  overflow: hidden;
+  background-color: rgba(231, 246, 250, 1);
+  margin-top: 50px;
+}
+#instructor .box2 h2 {
+  float: right;
+  margin-right: 100px;
+}
+#instructor .box2 p {
+  margin-left: 100px;
+  margin-top: 0px;
+}
+#instructor .box2 h3 {
+  margin-left: 100px;
+}
+#instructor .box3 {
+  background-color: rgba(237, 224, 218, 1);
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#instructor .box3 h2 {
+  float: left;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+#instructor span {
+  font-size: 25px;
+}
+#instructor .pc {
+  display: block;
+}
+#instructor .sp {
+  display: none;
+}
+@media screen and (max-width:740px) {
+  #instructor .pc {
+    display: none;
+  }
+  #instructor .sp {
+    display: inline-block;
+  }
+  #instructor .box {
+    border: none;
+    margin: 0 50px;
+    text-align: center;
+  }
+  #instructor .box h2 {
+	float: none;
+	margin-top: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+  }
+  #instructor .box p {
+	margin: 30px auto;
+  }
+	#instructor .box2 h3 {
+	margin-left: 0px;
+}
+	#instructor .box3 h2 {
+	margin-left: 0px;
+	margin-right: 0px;
+	}
+}

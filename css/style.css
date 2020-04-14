@@ -1,0 +1,137 @@
+
+
+
+
+
+
+#top{
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  color: #333;
+  line-height: 1.9;
+  text-align: left;
+}
+
+h1 a {
+	color: #333;
+	text-decoration: none;
+}
+h1 a:hover {
+	color:#333;
+	text-decoration: none;
+}
+
+/* .side {
+  position: relative;
+}
+
+.sticky {
+  position: absolute;
+} */
+
+nav li{
+  text-align: center;
+}
+
+.socialBtn {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.socialBtn img {
+  width: 28px;
+  height: 28px;
+}
+
+#main-image {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#main-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#about {
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+#about section .icon {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text{
+text-align: center;
+/* font-family: 'Lato', sans-serif; */
+padding: 0 42px;
+margin-bottom: 4rem;
+}
+
+.text01{
+  padding: 0 42px;
+margin-bottom: 2rem;
+/* font-family: 'Lato', sans-serif; */
+}
+
+.more{
+  display: block;
+  color: #333;
+  vertical-align: bottom;
+  text-align: right;
+  margin-bottom: -1.25rem;
+}
+
+.more:hover{
+  color: #333;
+  text-decoration: none;
+}
+
+#skill{
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+.skill_container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  justify-content: space-around;
+}
+
+.skill_items{
+  margin-bottom: 16px;
+}
+
+#work{
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+.work_items{
+  margin-bottom: 32px;
+}
+
+#contact{
+  margin-bottom: 60px;
+  padding: 0 60px;
+}
+
+.required{
+  margin-left: 10px;
+  padding: 1px 3px;
+  background-color: #f45555;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+#textarea{
+  margin-left:16px;
+}
+
+footer{
+  margin-bottom: 1rem;
+  /* padding: 0 60px; */
+}

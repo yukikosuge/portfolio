@@ -1,0 +1,5 @@
+[2019-10-27 11:17:04] layer "angkorwat.png": Duplicate path: angkorwat.png
+[2019-10-27 11:17:04] layer "history.png": Duplicate path: history.png
+[2019-10-27 11:17:04] layer "combdia.png": Duplicate path: combdia.png
+[2019-10-27 11:17:04] layer "access.png": Duplicate path: access.png
+[2019-10-27 11:17:04] layer "HOME.png": Duplicate path: HOME.png

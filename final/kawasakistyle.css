@@ -1,0 +1,549 @@
+@charset "utf-8";
+	html, body, h1, h2, h3, h4, h5, section,ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {/*リセット用*/
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-size: 100%;　
+	vertical-align:baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+	article, header, footer, aside, figure, figcaption, nav, section { /*リセット用*/
+	display:block;
+	}
+	html {/*ベース設定*/
+ 	font-size: 62.5%; /*ベースのフォントサイズで1emが10pxになるように調整　16px* 0.625 = 10px*/
+	}
+	body {/*ベース設定*/
+	line-height: 1.6;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #fff;
+	font-size: 1.8em;
+	}
+	ol, ul {
+	list-style: none;
+	list-style-type: none;
+	}
+	a {
+	text-decoration: none;
+	}
+	a:link { 
+	color: #bad86d;
+	}
+	a:visited{/*訪問済み*/
+	color : #1b5972 !important;
+	}
+	a{/*ホバーした時にふわっと色を変える*/
+	transition: color 0.3s;
+	}
+	a:hover {/*ホバー*/
+	color : #dcbf78 !important;
+	}
+ 	.anchor{ /*サイト内リンクでヘッダー分下げる*/
+    margin-top: -140px;
+   	padding-top: 140px;
+	}
+/* ヘッダー */
+	header {
+	width: 100%;
+    height: 140px;
+	margin: 0 auto;
+    position: fixed;
+	top: 0;
+	z-index: 1000;
+	}
+	.top {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+/*  display: flex;*/
+/*	padding: 60px 20px;*/
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    }
+	.logo {
+	float: left;
+	margin-right: 80px;
+	margin-left: 25px;
+	width: 430px;
+	margin-top: 25px;
+	}
+
+/* ナビゲーション */
+	.navi {
+	}
+	.nav {
+	overflow: hidden;
+	height: 140px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	align-items: flex-end;
+}
+.nav li {
+	list-style: none;
+	align-items: flex-end; 
+}
+.nav li a {
+  display: block;
+  width: 115px;
+  height: 60px;
+  text-align: center;
+  color: #696964;
+  font-size: 0.9em;
+  line-height: 3.8;
+  background: #fff;
+  text-decoration: none;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.nav > li:hover > a {/*layer-1*/
+  color: #ccc;
+  background: #fff;
+}
+.nav li ul {
+  width: 167px;
+  display: none;
+  /*margin-left: 0px;*/
+  position: absolute;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+}
+.nav > li li:hover > a {/*layer-2*/
+  color: #dcbf78;
+  background: #fff;
+}
+.nav li ul li a {
+  border-top: 1px solid #ccc;
+}
+
+
+/* メイン */
+	h2 {
+	text-align: center;
+	padding: 5px 0 30px;
+	margin-bottom: 20px;
+	}
+	.main-img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	clear: both;
+	margin-top: 140px;
+	}
+	#about, #info, #gallery, #contact, 
+	#wedding, #birthday, #event {
+	text-align: center;
+	margin: 0 auto 40px;
+	/* [disabled]background-color: #dedef0; */
+	padding-bottom: 15px;
+	}
+	#cakes, #voice {
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	/* [disabled]background-color: blue; */
+	padding-bottom: 15px;
+	}
+
+	#about{
+	animation-name: SlideUp;/* アニメーション名 */
+	animation-duration: 4.8s;/* アニメーション時間 */		
+	}
+	.topimg {
+		margin-top: 150px;
+	}
+	#info {	
+	animation-name: LeftToRight;/* アニメーション名 */
+	animation-duration: 6s;/* アニメーション時間 */
+	}
+	.item {
+	/* [disabled]background-color:	blue; */
+	}
+	.item p  {
+			float: left;
+	}
+	.item-box {
+		text-align: center;
+	}
+	.box {
+	width: 67.5%;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	/* [disabled]background-color: white; */
+	}
+	.wedding-img {
+	/* [disabled]background-color:	red; */
+	}
+
+	.text {
+	text-align: left;
+	padding-top: 10px;
+	/* [disabled]background-color:	#71a95a; */
+	}
+	.text p {
+		padding-bottom: 5px;
+	}
+
+	.box-bg {
+	/*background-color: #fff;*/
+	background-image: url(img/bg-about.png) no-repeat;
+	padding-top: calc(300 / 1600 * 100%);
+	background-size: cover;
+	}	
+	
+	
+ /*アバウト*/
+	#copytop {
+	padding-bottom: 40px;
+	}
+	.copytop {/*背景*/
+    /*background-image: url(img/bg-about.png);*/
+    /*background-repeat: no-repeat;*/
+	background-color: #dcbf78;
+    width: 100%;
+    /*background-size: contain; /*縦横比キープで、表示領域に収まるよう表示*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align: center;
+	margin-top: 100px;
+	animation-name: SlideUp;/* アニメーション名 */
+	animation-duration: 2s;/* アニメーション時間 */		
+	}
+	.box-copytop p, .box-copytop h2 {
+    padding: 0 50px 10px;
+	}
+
+
+	#about.box {
+		padding-bottom: 40px;
+	}
+	.box-about {/*背景*/
+    background-image: url(img/bg-about.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain; /*縦横比キープで、表示領域に収まるよう表示*/
+    padding-top: 1%;
+	}
+	.box-about p,.box-about h2 {
+    padding: 0 50px 10px;
+	}
+
+ /*インフォメーション*/
+.box-info {/*背景*/
+    background-image: url(img/bg-info.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 1%;
+}
+.box-info p,.box-info h2 {
+    padding: 0 50px 10px;
+}
+
+ /*ギャラリー*/
+	.gallery_box, .voice-box-first {
+		overflow: hidden;
+	}
+	.gallery_box {
+	width: 90%;
+	margin: 0 auto;
+}
+	.gallery_box p {
+		float: left;
+}
+
+ /*VOICE*/
+	.first p, .voice-box-first p {
+		float: left;
+}
+	.voice-box-first-cmnt {
+		margin-left: 50px;
+		padding: 30px 20px 30px 40px;
+		text-align: left;
+}
+	.voice-inner {
+		overflow: hidden;
+}
+	.voice-box {
+		float: left;
+		width: 33.3%;
+}
+	#voice.voice-box-first-cmnt p,
+	#voice.voice-box-cmnt p{
+		line-height: 1.8;
+}
+	.voice-box-cmnt {
+	text-align: left;
+	padding: 30px 30px 80px;
+	/* [disabled]background-color: #6F9F5B; */
+}
+	.voice-bg1 {
+    background-image: url(img/voice_bg_1st.jpg);
+    background-repeat: y-repeat;
+    width: 100%;
+    background-size: contain;
+}
+	.voice-bg2 {
+    background-image: url(img/voice_bg.jpg) !important;
+    background-repeat: y-repeat !important;
+    width: 100% !important;
+    background-size: contain !important;
+}
+
+
+
+
+
+
+/*TOPに戻る*/
+	.pagetop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	position: fixed;
+	display: none;
+	}
+#contact {
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+
+/* フッター */
+	footer {
+	width: 100%;
+	/* [disabled]background-color:	#e08f62; */
+	}
+
+ /*アクセス*/
+	#access {
+	overflow: hidden;
+	background-color: #e4e4e4;
+		}
+	#access h2 {
+		text-align: center;
+	}
+	#access .address {
+	float: left;
+	margin-left: 10px;
+	padding: 50px 0 0 40px;
+	/* [disabled]background-color:	#9dab86; */
+	width: 30%;
+	text-align: left;
+	/*background: #ccc;*/
+	}
+	.address p {
+	padding-bottom:20px;
+	}
+	#access .map {
+	float: right;
+	margin: 0;
+	}
+	.access-box {
+		overflow: hidden;
+}
+
+ /*コピーライト*/
+ 	.copy {
+	text-align: center;
+	padding: 5px 0;
+	/* [disabled]background-color: pink; */
+	clear: both;
+	}
+
+/* スライダー */
+.arrange {
+	/* [disabled]background-color: #fbedd7; */
+	width: 100%;
+}
+.arrange .inner {
+	/* [disabled]background-color: #ccc; */
+	overflow: hidden;
+	width: 100%;
+}
+.arrange .inner p {
+    float: left;
+}
+.caroufredsel_wrapper {
+	overflow: visible !important;
+}
+
+
+/* ホバーで横にズレるバナー*/
+.bn {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.bn .caption {
+	font-size: 110%;
+	color: #696464;
+	padding-top: 80px;
+	padding-left: 20px;
+}
+.bn .mask {
+	width: 50%;	/* 画像の半分の大きさにする */
+	height: 98%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: -50%;	/* 枠の左に置いて表示させない */
+	background-color: rgba(162, 224, 224, 1);
+	opacity: 0.9;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.bn:hover .mask {
+	margin-right: 0px;	/* 右にずらして表示する */
+}
+.bn img {
+	-webkit-transition:	all 0.4s ease;
+	transition:	all 0.4s ease;
+}
+.bn:hover img {
+	margin-right: 50%;	/* 画像を半分サイズ、右にずらす */
+}
+.bn .mask p {
+	padding-bottom: 30px;
+}
+
+
+
+/*タブ（ギャラリー）*/
+ul#demo2_headline {
+float:left;
+width:15%;
+margin-top: 10px;
+padding: 0;
+}
+ul#demo2_headline li{
+display: inline-block;
+width:100%;
+height: 200px;
+/*line-height: 50px;*/
+margin: 0 0 0 25px;
+background-color:#fff;
+text-align: center;
+cursor: pointer;
+padding-top: 90px;
+}
+
+ul#demo2_headline li.current{
+background-color:#d2d0fe;
+text-decoration: underline;
+}
+
+ul#demo2_headline a:hover {/*ホバー*/
+	background-color: #dcbf78 !important;
+	display: inline-block;
+}
+
+ul#demo2_story {
+float: left;
+width:85%;
+margin: 10px auto 50px;
+padding: 0;
+}
+
+ul#demo2_story li{
+display: none;
+vertical-align: top;
+height:auto;
+background-color:#fff;
+padding: 0 0 50px 1px;
+z-index: 2;
+}
+
+ul#demo2_story li img {
+margin: 0 10px 0 0 ;
+}
+
+ul#demo2_story li.current{
+display: block;
+background-color:#fff;
+}
+
+/*フェードイン*/
+
+@keyframes SlideUp {
+from {
+    opacity: 0;
+    transform: translateY(300px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);/* Y軸方向に0px */
+}
+}
+@keyframes LeftToRight {
+from {
+    opacity: 0;
+    transform: translateX(-300px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+
+
+
+
+/*swiper チャレンジ*/
+/* 全体のスタイル */
+.swiper-wrapper {
+		position: relative !important;
+	width: 100%;
+	height: 250px;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 250px;
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  top: 50% !important;
+ right: 20%!important;
+}
+.swiper-button-prev,.swiper-button-next {
+    width: 160px !important;
+    height: 80px !important;
+}
+
+.swiper-button-next {
+	background-image: url(gotop.gif);
+}
+.swiper-button-disabled {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:640px){
+}

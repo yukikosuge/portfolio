@@ -1,0 +1,236 @@
+@charset "utf-8";
+#index .main-img {
+  /*position: relative;*/
+	width: 100%;
+  margin-top: 94px;
+  margin-bottom: 95px;
+  /*background-color: white;*/
+}
+#index .main-img img {
+  width: 100%;
+  /*height: 70vh;*/
+  height: 640px;
+  object-fit: cover;
+  object-position: 0 0;
+  /*	max-width: 1200px;
+	height: auto;*/
+}
+
+/*#index .main-img-message {
+  position: absolute;
+  top: 42px;
+  left: 42px;
+}*/
+/*#index .main-img.fixed img {
+  margin-top: 70px;
+}*/
+#index .wave img {
+  margin-top: -19px;/*波の高さ*/
+  transform: translateY(10px);
+  z-index: 900;
+}
+
+#index .slick-dots{
+    background-color: white;
+    margin-bottom: -26px;
+    height: 51px;
+}
+
+#index article {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  text-align: center;
+  line-height: 35px;
+}
+#index h2 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+#index .access h2{
+	padding-top: 40px;
+}
+
+#index h2 span {
+  border-bottom: 3px solid #2FB8D9;
+}
+#index article h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+#index .lesson {
+  margin-top: 72px;
+}
+#index .lesson-row1 p {
+  font-size: 15px;
+}
+#index .lesson-row1 .point {
+  text-align: left;
+}
+#index .lesson-row1 .circle {
+  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 2;
+}
+#index .about-lesson {
+  max-width: 1100px;
+  margin: 20px auto 100px;
+  border: 5px solid #97BE51;
+  border-radius: 10px;
+}
+#index td, th {
+  vertical-align: top;
+  text-align: left;
+}
+#index td h3 {
+  margin: 0 0 16px;
+  font-weight: bold;
+}
+#index td p {
+  line-height: 35px;
+  margin-bottom: 36px;
+}
+#index td {
+  padding-left: 40px;
+}
+#index .teachers-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+#index .teachers {
+  max-width: 1100px;
+  margin: 0 auto 153px;
+  border: 5px solid #97BE51;
+  border-radius: 10px;
+}
+#index .teachers .more {
+  text-align: right;
+  margin-right: 64px;
+  margin-bottom: 15px;
+}
+#index .voice {
+  max-width: 1100px;
+  margin: 0 auto 153px;
+  border: 5px solid #97BE51;
+  border-radius: 10px;
+}
+#index .concrete-voice-container {
+  max-width: 1000px;
+  height: 240px;
+  border: 5px solid #2FB8D9;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  list-style: none;
+  padding: 14px 14px 9px 40px;
+  line-height: 29px;
+}
+#index .concrete-voice-container li {
+  list-style: none;
+}
+#index .concrete-voice-container p {
+  text-align: right;
+}
+#index .concrete-voice-container-inner {
+  width: 854px;
+  /*margin-left: 45px;*/
+}
+#index .muryo {
+  width: 100%;
+  background-color: #97BE51;
+  margin-bottom: 100px;
+}
+#index .muryo-inner {
+  display: flex;
+  max-width: 1002px;
+  /*  justify-content: flex-start;*/
+  height: 377px;
+  margin-bottom: 147px;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: white;
+}
+#index .muryo h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+#index .muryo p {
+  font-size: 20px;
+  line-height: 35px;
+}
+#index .muryo img {
+  margin-right: 40px;
+}
+#index .muryo .expand1 {
+  margin-bottom: 26px;
+}
+#index .muryo .tell {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+#index small {
+  font-size: 14px;
+}
+#index .access {
+  margin-bottom: 175px;
+}
+#index .access .google-map {
+  width: 100%;
+  height: 300px;
+}
+#index .google-map iframe {
+  width: 100%;
+  height: 300px;
+}
+#index .teachers-container img {
+  margin-bottom: 20px;
+}
+#index table {
+  width: 900px;
+  margin: 0 auto;
+}
+#index table {
+  position: relative;
+}
+#index .lesson1 {
+  position: absolute;
+  top: -17px;
+}
+#index .lesson2, .lesson3, .lesson4 {
+  padding-left: 5px;
+}
+#index section {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#index .wave {
+  background: none;
+}
+#index .wave {
+  position: relative;
+  z-index: 40;
+  margin-top: -45px;
+}
+#index .wave #scroller {
+  margin-top: -1px;
+}
+#index .wave #scroller02 {
+  opacity: 0.6;
+}
+#index #scroller02 {
+  z-index: 10;
+}
+#index canvas {
+  height: 100px !important;
+}

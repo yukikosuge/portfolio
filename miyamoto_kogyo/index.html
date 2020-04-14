@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+<head>
+	<!--test-->
+	<meta charset="utf-8">
+	<title>ほのむ英会話</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="英会話,鶴ヶ島市,坂戸市,川越市,マンツーマン,プライベート,英語,スクール,教室,学校,若葉駅,幼児,小学生,中学生,高校生,こども,学生,大人,成人,一般,英検,ハワイ,アメリカ,留学,留学準備,ホームステイ,埼玉県,完全予約制,レッスン,体験レッスン,無料体験,アットホーム">
+	<meta name="description" content="埼玉県鶴ヶ島市にあるアットホームな英会話スクールです。完全予約制のためご自分に合ったペースで英会話を学べます。無料体験レッスン随時受付中です。">
+	<link rel="stylesheet" href="css/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--slick-->
+	<link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="js/slick.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- simplyscroll -->
+	<script src="./js/jquery.simplyscroll.js"></script>
+
+	<!--smoothscroll-->
+	<script src="js/jquery.smoothscroll.js"></script>
+
+	<link rel="stylesheet" href="./css/jquery.simplyscroll.css">
+
+	<link rel="shortcut icon" href="img/titlelogo.png" type="img/titlelogo.png" />
+	<link rel="icon" href="img/titlelogo.png" type="img/titlelogo.png" />
+
+	<script>
+		$(function() {
+			// nav-toggle
+			$('#nav-toggle').click(function() {
+				$('header').toggleClass('open');
+			});
+
+			// カルーセル
+			$('.slider').slick({
+				autoplay: true,
+				autoplaySpeed: 3000,
+				dots: true,
+				fade: true,
+				speed: 1200,
+				arrows: false,
+			});
+
+			// 波の処理
+			$("#scroller").simplyScroll({
+				pauseOnHover: false,
+				pauseOnTouch: false,
+				speed: 5
+			});
+			$("#scroller02").simplyScroll({
+				pauseOnHover: false,
+				pauseOnTouch: false,
+				speed: 1
+			});
+
+		});
+
+		// 画像切替
+		function MM_preloadImages() { //v3.0
+			var d = document;
+			if (d.images) {
+				if (!d.MM_p) d.MM_p = new Array();
+				var i, j = d.MM_p.length,
+					a = MM_preloadImages.arguments;
+				for (i = 0; i < a.length; i++)
+					if (a[i].indexOf("#") != 0) {
+						d.MM_p[j] = new Image;
+						d.MM_p[j++].src = a[i];
+					}
+			}
+		}
+
+		function MM_swapImgRestore() { //v3.0
+			var i, x, a = document.MM_sr;
+			for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+		}
+
+		function MM_findObj(n, d) { //v4.01
+			var p, i, x;
+			if (!d) d = document;
+			if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+				d = parent.frames[n.substring(p + 1)].document;
+				n = n.substring(0, p);
+			}
+			if (!(x = d[n]) && d.all) x = d.all[n];
+			for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+			for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+			if (!x && d.getElementById) x = d.getElementById(n);
+			return x;
+		}
+
+		function MM_swapImage() { //v3.0
+			var i, j = 0,
+				x, a = MM_swapImage.arguments;
+			document.MM_sr = new Array;
+			for (i = 0; i < (a.length - 2); i += 3)
+				if ((x = MM_findObj(a[i])) != null) {
+					document.MM_sr[j++] = x;
+					if (!x.oSrc) x.oSrc = x.src;
+					x.src = a[i + 2];
+				}
+		}
+	</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/teacher1-2.png','img/teacher2-2.png','img/teacher3-3.png')">
+	<header id="header">
+		<div class="header-wrapper">
+			<div id="nav-toggle">
+			  <div> <span></span> <span></span> <span></span> </div>
+			</div>
+			<h1><a href="index.html"><img src="./img/logo-2.png" alt=""></a></h1>
+			<nav id="grobal-nav">
+				<ul>
+					<li><a href="course.html"><img src="img/nav-course.png" alt=""></a></li>
+					<li><a href="lesson_fee.html"><img src="img/nav-lessonfee.png" alt=""></a></li>
+					<li><a href="instructor.html"><img src="img/nav-instructor.png" alt=""></a></li>
+					<li><a href="comments.html"><img src="img/nav-voice.png" alt=""></a></li>
+					<li><a href="access.html"><img src="img/nav-access.png" alt=""></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--mainのidはページ名-->
+	<main id="index">
+		<section class="main-img">
+			<!--<img class="main-img-back" src="./img/topimage.png" alt=""> -->
+			<!--<img class="main-img-message" src="./img/main-message.png" alt="">-->
+			<ul class="slider">
+				<li><a href="#"><img src="img/mainimage-640.jpg" alt="image01"></a></li>
+				<li><a href="#"><img src="img/mainimage2-640.jpg" alt="image02"></a></li>
+				<li><a href="#"><img src="img/mainimage3-640.jpg" alt="image03"></a></li>
+				<li><a href="#"><img src="img/mainimage4-640.jpg" alt="image04"></a></li>
+			</ul>
+		</section>
+		<section class="wave">
+			<div class="wave">
+				<ul id="scroller">
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+				</ul>
+			</div>
+			<!-- wave -->
+
+			<div class="wave wave-trance">
+				<ul id="scroller02">
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+					<li><img src="img/wave-bottom.png" width="495" height="50" alt=""></li>
+				</ul>
+			</div>
+			<!-- wave -->
+
+		</section>
+		<section class="about-lesson">
+			<article class="about">
+				<h2><span>ほのむ英会話とは</span></h2>
+				<h3>鶴ヶ島にあるハワイムードたっぷりの英会話教室です</h3>
+				<p>『ほのむ』はハワイ島にある人口500人ほどの小さな町で、<br>
+					以前は日系人がサトウキビ栽培を行っていた場所であり、日本人学校もありました。<br>
+					私の子ども達はそこで伸び伸び育ち、思い出深い場所です。<br>
+					ほのむ英会話で生徒さんが学ぶことを楽しみ、そしてAloha Spritでアットホームな教室を提供したく、<br>
+					自宅の一室をリフォームし、ほのむ英会話を開講しました。</p>
+				<p>海外生活でのエピソード等を交えた、日常英会話を学べるスクールです。<br>
+					リラックスした雰囲気で、気軽に英会話に触れながら確実に英語力を高めることが出来ます。<br>
+					幼児・小学生クラスでは、フォニックスと基礎英会話が学べます。<br>
+					また、ゲームや歌、動画などを使って、飽きずに集中できるよう工夫しています。<br>
+					当スクールにご興味のある方、ご質問等ある方は、まずメールやお電話にてお問い合わせ願います。<br>
+					皆さまにお会いできるのを楽しみにしております。</p>
+			</article>
+			<article class="lesson">
+				<h2><span>ほのむ英会話のレッスン</span></h2>
+				<table>
+					<tr>
+						<th><img class="lesson1" src="img/lesson1.png" alt=""></th>
+						<td>
+							<h3>一人一人に寄り添ったレッスンを提供</h3>
+							<p>大手スクールとは違い、受講される方、又保護者のご要望に出来るだけ添えるような一人一人に寄り添ったレッスンを行っています。 </p>
+						</td>
+					</tr>
+					<tr>
+						<th><img class="lesson2" src="img/lesson2.png" alt=""></th>
+						<td>
+							<h3>完全予約制のプライベートレッスン</h3>
+							<p>不規則なスケジュールの方でも空いているお時間に受講できます。 受講される前月に予約して頂いています。 </p>
+						</td>
+					</tr>
+					<tr>
+						<th><img class="lesson3" src="img/lesson3.png" alt=""></th>
+						<td>
+							<h3>安心できる料金設定</h3>
+							<p>１コマの受講料×１ヶ月のコマ数＝その月のお月謝としています。 テキスト代は必要な時に必要なテキストを書店で購入して頂いています。 </p>
+						</td>
+					</tr>
+					<tr>
+						<th><img class="lesson4" src="img/lesson4.png" alt=""></th>
+						<td>
+							<h3>アットホームで暖かい雰囲気のスクール</h3>
+							<p>保育士の経験を活かし、一人一人の成長に合わせてレッスンをしています。 たくさんのイベントを企画しているので、本場アメリカの雰囲気を経験できます。</p>
+						</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+		<section class="teachers">
+			<h2><span>講師紹介</span></h2>
+			<div class="teachers-container">
+				<div class="teacher1"> <img src="img/teacher1.png" alt="" id="Image1" onMouseOver="MM_swapImage('Image1','','img/teacher1-2.png',1)" onMouseOut="MM_swapImgRestore()">
+					<p>M先生</p>
+				</div>
+				<div class="teacher2"> <img src="img/teacher2.png" alt="" id="Image2" onMouseOver="MM_swapImage('Image2','','img/teacher2-2.png',1)" onMouseOut="MM_swapImgRestore()">
+					<p>B先生</p>
+				</div>
+				<div class="teacher3"> <img src="img/teacher3.png" alt="" id="Image3" onMouseOver="MM_swapImage('Image3','','img/teacher3-3.png',1)" onMouseOut="MM_swapImgRestore()">
+					<p>K先生</p>
+				</div>
+			</div>
+			<p class="more"><a href="instructor.html">more <img class="arrow1" src="img/arrow.png" alt=""></a></p>
+		</section>
+		<section class="voice">
+			<h2><span>生徒さんの声</span></h2>
+			<div class="concrete-voice-container">
+				<div class="concrete-voice-container-inner">
+					<ul>
+						<li>得意なところを褒め、苦手なところを見抜き、一人一人に合うレッスンをして下さっています。
+						  <p>川越市/Sちゃんママ</p>
+						</li>
+						<li>アットホームな雰囲気ですぐに慣れたようです。「毎回ゲームをするのが楽しい」と言っています。
+						  <p>鶴ケ島市/Aちゃんママ</p>
+						</li>
+						<li>「痒いところに手が届く」そんな教室です。今後の成長が楽しみです。いい教室、いい先生に出会えました。
+							<p>川越市/Eくんママ</p>
+						</li>
+					</ul>
+				</div>
+				<p class="more"><a href="comments.html">more <img class="arrow2" src="img/arrow.png" alt=""></a></p>
+			</div>
+		</section>
+		<section class="muryo">
+			<h2 class="smart-var">無料体験レッスン受付中！</h2>
+			<div class="muryo-inner">
+				<div class="muryo-left">
+					<img src="img/taiken-img.png" alt="">
+
+				</div>
+				<div class="muryo-right">
+					<!--<h2 class="pc-ver">無料体験レッスン受付中！</h2>-->
+					<div class="expand1">
+						<p>あなたもご自分に合った英会話を学んでみませんか？</p>
+					</div>
+					<p>40分の体験レッスンを申し込みを受付中です。</p>
+					<p>まずはお電話にてお申し込み下さい。</p>
+					<p class="tell">TEL : 000-0000-0000</p>
+					<p class="muryo-final"><small>なお、体験レッスンはお１人様１回のみとなっておりますので、ご了承ください。</small></p>
+				</div>
+			</div>
+		</section>
+		<section class="access">
+			<h2><span><a href="access.html">アクセス</a></span></h2>
+			<div class="google-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826132.8938652871!2d138.7452486339544!3d36.018300305868955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60192a8d477b01e9%3A0xfed91267aa80526c!2z5Z-8546J55yM!5e0!3m2!1sja!2sjp!4v1581482361659!5m2!1sja!2sjp"
+				   frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p class="go-top"><a href="#index">ページTOPへ</a></p>
+		<div class="footer-bg">
+			<div class="footer-container">
+				<div class="footer-left">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="course.html">コース</a></li>
+						<li><a href="lesson_fee.html">受講料</a></li>
+						<li><a href="instructor.html">講師紹介</a></li>
+						<li><a href="comments.html">生徒さんの声</a></li>
+						<li><a href="access.html">アクセス</a></li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<ul>
+						<li><a href="faq.html">よくある質問</a></li>
+						<li><a href="https://www.facebook.com/masami.hiratatalbot" target="_blank"><img src="img/face.png" alt=""></a></li>
+						<li><a href="https://www.instagram.com/honomu_english/?igshid=kubaoje4mcbz" target="_blank"><img src="img/insta.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="copyright">Copyright&copy;KosugeYuki.All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+	<script>
+		bubbly({
+			bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+		});
+	</script>
+</body>
+
+</html>

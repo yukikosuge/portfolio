@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+/*HTML5 Doctor Reset CSSをアレンジして使用しています。*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+/*不要な物は削除済、元データはテキストデータにあり*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+address,
+small, strong, 
+dl, dt, dd, ol, ul, li,form,
+table,tbody,tr, th, td,aside,
+footer, header, menu, nav,section{
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ /* プロジェクトによって変動 */
+ min-width: 1000px;
+ color: #000;
+ line-height: 1.6;
+ font-weight: 400;
+ font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+ width: 100%;
+ font-smoothing: antialiased;
+ font-variant-numeric: tabular-nums;
+ /* safari hover対策 */
+ -webkit-font-smoothing: antialiased;
+}
+
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+}
+
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+#all {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+
+
+.logo {
+    width: 240px;
+    float: left;
+    /* [disabled]margin-left: 120px; */
+
+}
+.text {
+    text-align: right;
+    display: block;
+    float: right;
+    padding-top: 34px;
+    /* [disabled]margin-right: 161px; */
+}
+nav {
+    position: fixed;
+    left: 0px;
+    top: 160px;
+    margin-left: 388px;
+    margin-top: 25px;
+}
+.mainimg {
+    background-image: url(img/main.png);
+    width: 1024px;
+    height: 668px;
+    margin-top: 160px;
+}
+
+main {
+    text-align: center;
+}
+.sintyaku {
+    margin-left: 468px;
+    margin-top: 100px;
+}
+.taiken {
+    margin-left: 236px;
+    margin-top: 100px;
+}
+.carender {
+    margin-left: -230px;
+    margin-top: 180px;
+}

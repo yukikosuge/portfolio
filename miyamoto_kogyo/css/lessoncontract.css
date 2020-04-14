@@ -1,0 +1,67 @@
+@charset "utf-8";
+#lessoncontract {
+	margin: 0 auto;
+	width: 100%;
+
+}
+#lessoncontract h2 {
+	height: 150px;
+	background-image: url(../img/nav_under.jpg);
+	padding-top: 50px;
+	padding-left: calc((100% - 1000px) / 2);
+	line-height: 50px;
+	background-repeat: no-repeat;
+	color: #fff;
+	background-size: cover;
+}
+#lessoncontract a  {
+	color: #000;
+	text-decoration: none;
+}
+#lessoncontract .wrapper {
+	margin: 0 auto 70px;
+	max-width: 1090px;
+	border: 5px solid #97BE51;
+	padding: 40px 50px;
+	border-radius: 10px;
+}
+#lessoncontract p {
+	padding-bottom: 40px;
+
+}
+
+#lessoncontract article {
+	margin-bottom: 70px;
+}
+#lessoncontract article:last-of-type {
+	/* [disabled]margin-bottom: 0px; */
+}
+#lessoncontract article h3 {
+	font-weight: bold;
+	font-size: 1.41rem;
+	text-indent: -1.41rem;
+	padding-left: 1.41rem;
+	margin-bottom: 20px;
+}
+#lessoncontract article p {
+	text-indent: -1rem;
+	padding-left: 1rem;
+	padding-bottom: 0px;
+}
+
+@media screen and (max-width:740px){
+#lessoncontract .wrapper {
+	margin: 0 auto 70px;
+	padding-top: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 40px;
+	border: none;
+	max-width: 740px;
+}
+#lessoncontract .topic-path  {
+	display: none;
+}
+
+
+}
