@@ -1,0 +1,243 @@
+/* 765px以下スマホ用サイズの記述 */
+
+/* MAIN */
+.copy {
+  position: absolute;
+  right: 44px;
+  top: 134px;
+}
+
+.trim {
+  position: relative;
+  width: 90%;
+  padding-top: 117%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.trim img{
+  position: absolute;
+  top: 46%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+  .copy_jp {
+    font-family: 'Noto Sans JP';
+    font-weight: normal;
+  }
+
+  /* VISION */
+  .Vision {
+    margin: 136px 22px 102px;
+}
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: -8px;
+}
+  .section-sabtitle {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+  .section-text {
+    font-weight: normal;
+  }
+
+  /* MESSAGE */
+  .ceo-imgWrapper {
+    margin-right: 44px;
+  }
+  .BG {
+    margin: 0 22px;
+    margin-top: -110px;
+    padding: 152px 30px 8px 30px;
+  }
+  .message {
+    margin: 50px 22px;
+  }
+
+  /* COMPANY */
+  .Company {
+    margin: 102px 22px 102px;
+  }
+  .section-wrapper:last-of-type{
+    padding-bottom: 120px;
+  }
+  .company-info-list{
+    border-top: 1px solid #ddd;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .company-info-list>div{
+    display: flex;
+    padding: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    border-bottom: 1px solid #ddd;
+
+  }
+  .company-info-title{
+    font-weight: bold;
+    flex-basis: 142px;
+  }
+  
+  .maps-outer{
+    position:relative;
+    width:100%;
+    height:314px;
+    padding-top:32.7%;
+  }
+  .maps-outer iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+  /* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+
+
+@media screen and (min-width: 768px) {
+  /* 768px以上用（タブレット用）の記述 */
+
+  /* MAIN */
+.copy {
+    position: absolute;
+    right: 80px;
+    top: 160px;
+}
+
+.trim {
+  position: relative;
+  width: 100%;
+  padding-top: 220%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.trim img{
+  position: absolute;
+  top: 222px;
+  left: 76%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  }
+
+  .BG_black {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    width: 44%;
+    height: 98%;
+    z-index: -1;
+}
+
+/* VISION */
+
+.Vision {
+  margin: 136px 22px 102px 150px;
+}
+
+/* MESSAGE */
+.ceo-imgWrapper {
+  width: 320px;
+  height: 216px;
+  margin-left: 22px;
+}
+
+.BG {
+  /* margin: 0 22px; */
+  margin-top: -110px;
+  padding: 152px 30px 8px 30px;
+  margin-left: 245px;
+}
+
+/* COMPANY */
+.maps-outer {
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+}
+
+
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+
+@media screen and (min-width: 1024px) {
+  /* 1024px以上用（PC用）の記述 */
+
+
+  /* MAIN */
+  .copy {
+    position: absolute;
+    right: 240px;
+    top: 157px;
+}
+
+  .trim {
+    position: relative;
+    width: 153%;
+    padding-top: 42%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .trim img{
+    position: absolute;
+    top: 192px;
+    left: 66%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 63%;
+    max-height: 100%;
+    }
+
+    /* VISION */
+    .Vision {
+      margin: 136px 22px 136px 400px;
+    }
+    /* MESSAGE */
+    .ceo-imgWrapper {
+      width: 420px;
+      height: 216px;
+      margin-left: 170px;
+  }
+  .BG {
+    margin-top: -110px;
+    padding: 152px 185px 60px 185px;
+    margin-left: 500px;
+    margin-right: 170px;
+  }
+
+    /* COMPANY */
+    .Company {
+      margin: 136px 170px;
+    }
+
+    .company-info-list {
+      border-top: 1px solid #ddd;
+      margin-bottom: 50px;
+      font-size: 14px;
+  }
+  }
+
+
+
+
+
+}

@@ -1,0 +1,655 @@
+/* 765px以下スマホ用サイズの記述 */
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Montserrat', 'Noto Sans JP', 'sans-serif','游ゴシック';
+  color: #333;
+}
+
+img,svg{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+header {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+}
+
+
+/* HUMBERGER */
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: rgba(0, 0, 0, .95);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  /* border-bottom: 1px solid #333; */
+}
+nav .inner ul li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+/* nav .inner ul li a:hover {
+  background: #e4e4e4;
+} */
+
+.NavText:hover {
+  opacity: .7;
+  transition: .3s;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 16px;
+  right: 23px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+
+.toggle_btn.black span {
+  background-color: #333;
+  transition: background-color .3s;
+}
+
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .3;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.site-title {
+  width: 180px;
+  position: fixed;
+  top: 8px;
+  left: 23px;
+  z-index: 1;
+}
+
+.site-title.black svg path{
+  fill: #333;
+  transition: fill .3s;
+}
+
+/* MAIN */
+
+.MainView {
+  position: relative;
+}
+
+.MainImg {
+  margin-left: -74px;
+  margin-right: 88px;
+}
+
+.MainTBImg-Wrapper {
+  display: none;
+}
+
+.MainPCImg-Wrapper {
+  display: none;
+}
+
+.BG_black{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 76%;
+  height: 108%;
+  z-index: -1;
+}
+
+.copy {
+  position: absolute;
+  right: 49px;
+  top: 162px;
+}
+
+.copy_jp{
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.copy_company{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.main-copy{
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+
+/* ABOUT */
+
+
+.AboutUs {
+    background: url(../img/about-img.jpg);
+    height: 541px;
+    position: relative;
+    padding: 0px 22px;
+    margin: 100px auto 0px;
+}
+
+.AboutTextBox {
+  width: 88%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,.95);
+  position: absolute;
+  margin: 50px 0px 50px 0px;
+  height: 440px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.link-btn{
+  color: #fff;
+  background-color: #000;
+  width: 160px;
+  line-height: 36px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+
+
+/* WORKS */
+.BG {
+  background: #f0f0f0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.Works {
+  margin: 50px 22px;
+}
+
+/* CULTURE */
+.Culture {
+  margin: 50px 22px;
+}
+
+/* TOPICS */
+.LatestTopics {
+  margin: 50px 22px;
+}
+.topics-list {
+  max-width: 700px;
+}
+.topics-item {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.topics-date {
+  color: #cecece;
+  font-size: 10px;
+  font-weight: bold;
+}
+.topics-title{
+  color: #333;
+  font-size: 12px;
+  /* font-weight: bold; */
+}
+/* .ml-auto{
+  margin-left: auto;
+} */
+
+.link-Tbtn {
+  color: #fff;
+  background-color: #000;
+  width: 160px;
+  line-height: 36px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+
+/* CONTACT */
+.Contact {
+  margin: 50px 22px;
+}
+
+/* FOOTER */
+.footer{
+  line-height: 50px;
+  background-color: #525252;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+
+
+@media screen and (min-width: 768px) {
+/* 768px以上用（タブレット用）の記述 */
+
+/* MAIN */
+
+.MainView {
+
+  position: relative;
+}
+
+.MainImg {
+margin-left: -584px;
+    margin-right: 128px;
+}
+
+
+.MainSPImg-Wrapper {
+  display: none;
+}
+
+.MainTBImg-Wrapper {
+  display: block;
+  height: 550px;
+}
+
+.MainPCImg-Wrapper {
+  display: none;
+}
+
+.trim {
+  position: relative;
+  width: 1114px;
+  padding-top: 624px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.trim img{
+  /* 画像を上下左右に中央配置する（絶対指定） */
+    position: absolute;
+    top: 51%;
+    left: 62%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 画像の最大サイズは枠の1.5倍まで */
+    max-width: 150%;
+    max-height: 150%;
+  }
+
+.BG_black {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 44%;
+  height: 131%;
+  z-index: -1;
+}
+
+.copy {
+  position: absolute;
+  right: 86px;
+  top: 180px;
+}
+
+/* ABOUT */
+
+.AboutUs {
+  background: url(../img/about-img.jpg);
+  height: 460px;
+  position: relative;
+  padding: 0px 22px;
+  margin: 247px auto 0px;
+}
+
+.AboutTextBox {
+  width: 88%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,.95);
+  position: absolute;
+  margin: 50px 24px;
+  height: 360px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 32px;
+  margin: 22px 0;
+}
+
+/* WORKS */
+.WorksImg-Wrapper {
+  width: 520px;
+  max-width: 100%;
+}
+
+/* CULTURE */
+.CultureImg-Wrapper {
+  width: 520px;
+  max-width: 100%;
+}
+
+/* TOPICS */
+.topics-title {
+  color: #333;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+
+.link-Tbtn {
+  color: #fff;
+  background-color: #000;
+  width: 160px;
+  line-height: 36px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+
+/* CONTACT */
+.ContactImg-Wrapper {
+  width: 520px;
+  max-width: 100%;
+}
+
+}
+
+/* ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ */
+
+@media screen and (min-width: 1024px) {
+  /* 1024px以上用（PC用）の記述 */
+
+  .site-title {
+    width: 260px;
+    position: fixed;
+    top: 16px;
+    left: 23px;
+    z-index: 1;
+}
+
+/* MAIN */
+
+  .MainSPImg-Wrapper {
+    display: none;
+
+  }
+  
+  .MainTBImg-Wrapper {
+    display: none;
+  }
+  
+  .MainPCImg-Wrapper {
+    display: block;
+    width: 1100px;
+  }
+
+
+  .trim {
+    position: relative;
+    width: 2550px;
+    padding-top: 624px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .trim img{
+    /* 画像を上下左右に中央配置する（絶対指定） */
+    position: absolute;
+    top: 311px;
+    left: 1082px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 42%;
+    max-height: 100%;
+    }
+
+    .BG_black {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #222;
+      width: 50%;
+      height: 116%;
+      z-index: -1;
+  }
+
+  .copy {
+    position: absolute;
+    right: 263px;
+    top: 180px;
+}
+
+.copy_jp{
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.copy_company{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.main-copy{
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ABOUT */
+.AboutUs {
+  background: url(../img/about-img.jpg);
+  background-size: cover;
+  height: 564px;
+  position: relative;
+  padding: 0px 22px;
+  margin: 202px auto 0px;
+  width: 82%;
+}
+
+.AboutTextBox {
+  width: 46%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,.95);
+  position: absolute;
+  margin: 102px 30px;
+  height: 360px;
+}
+
+/* WORKS */
+.BG {
+  background: #f0f0f0;
+  background: #f0f0f0;
+  padding-top: 204px;
+  padding-bottom: 52px;
+  margin-top: -102px;
+  margin-bottom: 102px;
+}
+
+.Works {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.Works-CultureContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CULTURE */
+.Culture {
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+/* TOPICS */
+.LatestTopics {
+  margin: 50px 164px;
+}
+
+.topics-list {
+  max-width: 700px;
+  margin-left: auto;
+}
+
+.link-Tbtn {
+  color: #fff;
+  background-color: #000;
+  width: 160px;
+  line-height: 36px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  /* margin-top: 10px; */
+  margin-left: auto;
+}
+
+/* CONTACT */
+.C-BG {
+  background: #f0f0f0;
+  padding-top: 82px;
+  padding-bottom: 52px;
+  margin-top: 102px;
+}
+.ContactWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 0 140px;
+
+}
+.ContentsWrapper {
+  margin: 100px 30px;
+}
+
+.ContactImg-Wrapper {
+  width: 1010px;
+  max-width: 100%;
+}
+
+}
