@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>fullPage.js - selfDEMO</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
+</head>
+<body>
+<ul id="menu">
+    <li data-menuanchor="1page" class="active"><a href="#1page">First slide</a></li>
+    <li data-menuanchor="2page"><a href="#2page">Second slide</a></li>
+    <li data-menuanchor="3page"><a href="#3page">Third slide</a></li>
+    <li data-menuanchor="4page"><a href="#4page">Fourth slide</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section">Some section</div>
+    <div class="section">
+    <div class="slide"> Slide 1 </div>
+    <div class="slide"> Slide 2 </div>
+    <div class="slide"> Slide 3 </div>
+    <div class="slide"> Slide 4 </div>
+</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+ <script>
+ $(document).ready(function() {
+ $('#fullpage').fullpage({
+  scrollingSpeed: 1000,
+  loopBottom: true,
+ anchors: ['1page', '2page', '3page','4page'],
+ menu: '#menu',
+ sectionsColor: ['#AACF52', '#4BBFC3', '#7BAABE', '#E5E5E5']
+ });
+ });
+ </script>
+ <!-- <script>
+   $(document).ready(function() {
+ $('#fullpage').fullpage({
+ scrollingSpeed: 8000, //スクロールするスピードをミリ秒で設定・デフォルトは700
+ easing: easeInSine, //垂直方向と水平方向のスクロールに使用するトランジションエフェクトを定義・デフォルトはeaseInOutCubic
+ loopBottom: true, //ラストページまでスクロールダウンした時に、トップページに戻るループするかどうかを設定・デフォルトはfalse
+ autoScrolling: true, //少しスクロールした時に自動で次のページまでスクロースするかどうかを設定・デフォルトはtrue
+ scrollBar: false, //スクロールバーの表示/非表示の設定・デフォルトはfalse
+ navigation: false, //右側に黒丸のナビゲーションの表示/非表示の設定・デフォルトはfalse
+ scrollOverflow: true //内容がページの高さより大きい場合に、スクロールを作成するべきかどうかを設定・デフォルトはfalse
+ });
+});
+ </script> -->
+
+</body>
+</html>
