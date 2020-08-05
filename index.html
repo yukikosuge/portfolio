@@ -2,20 +2,61 @@
 <html lang="ja">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172927658-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172927658-2');
+</script>
+
+<meta name="google-site-verification" content="p-F0LCHUXVIm5TeYa43-zMU3a8Y30hZapQ1TiuvbSyo" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ページ説明文のサンプルテキスト">
+  <meta name="description" content="KYのポートフォリオサイトです。">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 
-  <title>portfolio</title>
+  <title>KY's portfolio site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.smoothscroll.js"></script>
-    <!-- <script src="js/stickyfloat.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.smoothscroll.js"></script>
+  <script src="js/parallax.min.js"></script>
+  
+
+  <!-- フェードイン -->
+  <script>
+    $(function () {
+      function animation() {
+        $('.fadeInUp').each(function () {
+          //ターゲットの位置を取得
+          var target = $(this).offset().top;
+          //スクロール量を取得
+          var scroll = $(window).scrollTop();
+          //ウィンドウの高さを取得
+          var windowHeight = $(window).height();
+          //ターゲットまでスクロールするとフェードインする
+          if (scroll > target - windowHeight) {
+            $(this).css('opacity', '1');
+            $(this).css('transform', 'translateY(0)');
+          }
+        });
+      }
+      animation();
+      $(window).scroll(function () {
+        animation();
+      });
+    });
+  </script>
+
+
+
+  <!-- <script src="js/stickyfloat.js"></script>
     <script>
       $(function(){
         $(".sticky").stickyfloat({
@@ -30,12 +71,15 @@
 
 </head>
 
-<body id="top">
+
+
+  
   <!-- header -->
   <header>
-    <h1 class="container-left"><a href="index.html">Kosuge Yuki portfolio</a></h1>
+    <h1 class="container-left"><a href="index.html"><img src="img/logo_portfolio1.jpg" alt="KY'sPORTFOLIO" width="200px"
+          height="25px"></a></h1>
 
-    
+
     <div class="side">
       <nav class="sticky">
         <div class="container-light">
@@ -48,156 +92,394 @@
         </div>
       </nav>
     </div>
-    
+
     <ul class="socialBtn">
-      <li><a href="http://github.com/yukikosuge " target="_blank"><img src="img/github.svg" alt="" width="22px" height="22px" target="_blank"></a></li>
+      <li><a href="http://github.com/yukikosuge " target="_blank"><img src="img/github.svg" alt="githubアイコン"
+            width="22px" height="22px" target="_blank"></a></li>
     </ul>
 
   </header>
   <!-- main -->
   <div id="main">
     <!-- main-image -->
-    <section id="main-image">
-      <div class="pc"><img src="img/squirrel1.jpg" alt=""></div>
-      <div class="sp"><img src="img/squirrel.jpg" alt=""></div>
-    </section>
+    <!-- <section id="main-image">
+      <div class="pc"><img src="img/top_image2.jpg" alt="パソコンページメイン画像" style="opacity: 1;"></div>
+      <div class="sp"><img src="img/top_image.jpg" alt="スマホページメイン画像"></div>
+    </section> -->
+
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/top_image2.jpg">
+
+      <div class="fadeInUp">
+        <h2 class="ttl1" style="color: antiquewhite;"><span class="wtmw">Welcome to My Website</span></h2>
+      </div>
+
+      <div class="fadeInUp">
+        <p class="text0" style="color: antiquewhite;">
+          Thank you for visiting my site.
+        </p>
+      </div>
+
+    </div>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="fadeInUp">
       <h2 class="ttl">about</h2>
       <p class="text">
-      友人の話をきっかけにIT業界に教務を持ち始める。
-      今後IT業界は伸びていく事を感じ、ITの分野で市場価値を上げたいと考え独学を開始する。
-      独学を進めて行くにつれて、デザイン及びコーディングの楽しさを知ることが出来た。
-      これから出来ることを一つでも増やすべく、フロントエンジニアとしての勉学に励み、
-      web業界に精通するスキルを上げていこうと邁進中。</p>
+        友人の話をきっかけにIT業界に教務を持ち始める。
+        今後IT業界は伸びていく事を感じ、ITの分野で市場価値を上げたいと考え独学を開始する。
+        独学を進めて行くにつれて、デザイン及びコーディングの楽しさを知ることが出来た。
+        これから出来ることを一つでも増やすべく、デザイナークリエイターコーダーとしての勉学に励み、
+        web業界に精通するスキルを上げていこうと邁進中。</p>
 
       <div class="aboutcontainer">
 
-        <section class="first">
-          <h3 class="ttl">ディレクション</h3>
-          <p class="ttl">direction</p>
-          <p class="icon"><img src="img/business description.svg" width="50px" height="50px" alt=""></p>
-          <p class="text01">お客様の要望をヒアリングし、現状の問題点を洗い出し、現実的なプランを作成いたします。制作ではデザインに入る前の事前の準備が非常に重要と考えておりますので、何が必要で何が不要かを判断し、費用対効果の高いWebサイトを作るため尽力致します。</p>
-        </section>
-
-        <section class="second">
+        <section class="fadeInUp" id="design">
           <h3 class="ttl">デザイン</h3>
           <p class="ttl">design</p>
-          <p class="icon"><img src="img/brush.svg" width="50px" height="50px" alt=""></p>
-          <p class="text01">ヒアリングに基づいたプランに沿って、デザインを作成いたします。制作者の独りよがりにならない事を意識して、ユーザーが迷わない、簡潔に目的を達成できるデザインを心がけています。インターフェースの重要性が増す昨今どれだけユーザーを意識したデザインが出来るかが重要だと感じております。プランに則った形でユーザーを意識したデザインを心掛けてまいります。</p>
+          <p class="icon"><img src="img/brush.svg" width="50px" height="50px" alt="キャンバスアイコン"></p>
+          <p class="text01">
+            ヒアリングに基づいたプランに沿って、デザインを作成いたします。制作者の独りよがりにならない事を意識して、ユーザーが迷わない、簡潔に目的を達成できるデザインを心がけています。
+          </p>
         </section>
 
-        <section class="third">
+        <section class="fadeInUp" id="direction">
+          <h3 class="ttl">ディレクション</h3>
+          <p class="ttl">direction</p>
+          <p class="icon"><img src="img/business description.svg" width="50px" height="50px" alt="ボードアイコン"></p>
+          <p class="text01">
+            お客様の要望をヒアリングし、現状の問題点を洗い出し、現実的なプランを作成いたします。制作では、何が必要で何が不要かを判断し、費用対効果の高いWebサイトを作るため尽力致します。
+          </p>
+        </section>
+
+        <section class="fadeInUp" id="coding">
           <h3 class="ttl">コーディング</h3>
           <p class="ttl">coding</p>
-          <p class="icon"><img src="img/key1.svg" width="50px" height="50px" alt=""></p>
-          <p class="text01">デザインの意図を理解し、動きや効果を適切に組み込むことでWebサイトの印象は大きく変わります。スマートフォンサイト、従来のブラウザサイト、CSSを用いたスタイリング、Javascriptを用いた動作の追加、様々な手法に基づきコーディングを行って参ります。</p>
+          <p class="icon"><img src="img/key1.svg" width="50px" height="50px" alt="キーボードアイコン"></p>
+          <p class="text01">
+            デスマートフォンサイト、従来のブラウザサイト、CSSを用いたスタイリング、Javascriptを用いた動作の追加、様々な手法に基づきコーディングを行って参ります。
+          </p>
         </section>
+
       </div>
     </section>
+
     <!-- skill -->
-    <section id="skill">
-      <h2 class="ttl">skill</h2>
-      <p class="text">現在学習中言語及びツール</p>
+    <!-- <div class="wrapper"> -->
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/top_image5.jpg">
+      <section id="skill">
+        <div class="fadeInUp">
+          <h2 class="ttl" style="color: antiquewhite;">skill</h2>
+        </div>
+        <!-- <div class="fadeInUp">
       <div class="skill_container">
-        <div class="skill_items"><img src="img/ps.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/ai.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/xd.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/dw.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/html.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/css.svg" width="100px" height="100px" alt=""></div>
-        <div class="skill_items"><img src="img/js.svg" width="100px" height="100px" alt=""></div>       <div class="skill_items"><img src="img/jq.svg" width="100px" height="100px" alt=""></div>       <div class="skill_items"><img src="img/sass.svg" width="100px" height="100px" alt=""></div>
+
+        <div class="skill_items"><img src="img/ps.svg" width="100px" height="100px" alt="psアイコン"></div>
+        <div class="skill_items"><img src="img/ai.svg" width="100px" height="100px" alt="aiアイコン"></div>
+        <div class="skill_items"><img src="img/xd.svg" width="100px" height="100px" alt="xdアイコン"></div>
+        <div class="skill_items"><img src="img/dw.svg" width="100px" height="100px" alt="dwアイコン"></div>
+        <div class="skill_items"><img src="img/ae.svg" width="100px" height="100px" alt="aeアイコン"></div>
+        <div class="skill_items"><img src="img/html.svg" width="100px" height="100px" alt="htmlアイコン"></div>
+        <div class="skill_items"><img src="img/css.svg" width="100px" height="100px" alt="cssアイコン"></div>
+        <div class="skill_items"><img src="img/js.svg" width="100px" height="100px" alt="jsアイコン"></div>
+        <div class="skill_items"><img src="img/jq.svg" width="100px" height="100px" alt="jqアイコン"></div>
+        <div class="skill_items"><img src="img/sass.svg" width="100px" height="100px" alt="sassアイコン"></div>
+        <div class="skill_items"><img src="img/bootstrap.svg" width="100px" height="100px" alt="bootstrapアイコン"></div>
+        <div class="skill_items"><img src="img/materializecss.svg" width="100px" height="100px"
+            alt="materializecssアイコン"></div>
+        <div class="skill_items"><img src="img/unity.svg" width="100px" height="100px" alt="unityアイコン"></div>
+
       </div>
-    </section>
+      </div>  -->
+
+        <div class="fadeInUp">
+          <div class="skill-wrapper">
+            <table>
+              <tr>
+                <th>HTML5</th>
+                <td><span class="star5_rating" data-rate="4"></span></td>
+              </tr>
+              <tr>
+                <th>CSS3</th>
+                <td><span class="star5_rating" data-rate="4"></span></td>
+              </tr>
+              <tr>
+                <th>Javascript</th>
+                <td><span class="star5_rating" data-rate="2"></span></td>
+              </tr>
+              <tr>
+                <th>jQuery</th>
+                <td><span class="star5_rating" data-rate="1.5"></span></td>
+              </tr>
+              <!-- <tr>
+                <th>C#</th>
+                <td><span class="star5_rating" data-rate="0.5"></span></td>
+              </tr> -->
+              <!-- <tr>
+                <th>Java</th>
+                <td><span class="star5_rating" data-rate="0.5"></span></td>
+              </tr> -->
+              <tr>
+                <th>PhotoShop</th>
+                <td><span class="star5_rating" data-rate="3.5"></span></td>
+              </tr>
+              <tr>
+                <th>DreamWeaver</th>
+                <td><span class="star5_rating" data-rate="2.5"></span></td>
+              </tr>
+              <tr>
+                <th>Illustrater</th>
+                <td><span class="star5_rating" data-rate="2.5"></span></td>
+              </tr>
+              <tr>
+                <th>XD</th>
+                <td><span class="star5_rating" data-rate="2"></span></td>
+              </tr>
+              <tr>
+                <th>AfterEffects</th>
+                <td><span class="star5_rating" data-rate="2"></span></td>
+              </tr>
+              <!-- <tr>
+                <th>MayaLT</th>
+                <td><span class="star5_rating" data-rate="1"></span></td>
+              </tr> -->
+              <tr>
+                <th>Unity</th>
+                <td><span class="star5_rating" data-rate="2"></span></td>
+              </tr>
+              <!-- <tr>
+                <th>WordPress</th>
+                <td><span class="star5_rating" data-rate="0.5"></span></td>
+              </tr> -->
+              <!-- <tr>
+                <th>Processing</th>
+                <td><span class="star5_rating" data-rate="0.5"></span></td>
+              </tr> -->
+              <tr>
+                <th>ﾌﾚｰﾑﾜｰｸ</th>
+                <td>bootstrap<br>Materialize</td>
+              </tr>
+              <tr>
+                <th>その他</th>
+                <td>VisualStudioCode<br>Sass,Gulp,Git<br>Github,spine<br>tyranobuilder
+                C#,Java,MayaLT,<br>
+                WordPress,Processing
+              </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- </div> -->
+    </div>
+
+
+
 
     <!-- work -->
     <section id="work">
-      <h2 class="ttl">works</h2>
-      <p class="text">作品一例</p>
-      <div class="work_container">
+      <div class="fadeInUp">
+        <h2 class="ttl">works</h2>
+        <!-- <p class="text">作品一例</p> -->
+      </div>
+      <div class="fadeInUp">
+        <div class="work_container">
 
-        <div class="work_items">
-          <div class="card" style="width: 16rem;">
-            <img src="img/kosugekomuten_p1.png" class="card-img-top" alt="..." height="182px">
-            <div class="card-body">
-              <h4 class="card-title">小菅工務店</h4>
-              <p class="card-text">実家の工務店をイメージして作成しました。現在工務店は畳んでおりますが、喜んでもらえました。</p>
-              <a href="final/index.html" class="btn btn-primary">Check!!</a>
-              <a href="works.html" class="more" target="_blank">more>></a>
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/kosugekomuten_p1.png" class="card-img-top" alt="小菅工務店画像" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">小菅工務店</h4>
+                <p class="card-text">実家の工務店をイメージして作成しました。<br>
+                  現在工務店は畳んでおりますが、喜んでもらえました。</p>
+                  <a href="img/komuten.png" class="btn btn-primary">Check!!</a>
+                  <a href="comp.html" class="more" target="">design>></a>
+                </div>
+              </div>
+            </div>
+
+
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/ON_STAGE_p.png" class="card-img-top" alt="おんすてーじ！画像" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">ON-STAGE!公式サイト</h4>
+                <p class="card-text">架空のゲームをイメージして、
+                  公式サイトを作成致しました。様々なツールを用いて制作、ティザーサイト作品の最新作です。
+                </p>
+                <a href="ON_STAGE/index.html" class="btn btn-primary">Check!!</a>
+                <a href="LP.html" class="more" target="">LP-site>></a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="work_items">
-          <div class="card" style="width: 16rem;">
-            <img src="img/honomu.png" class="card-img-top" alt="..." height="182px">
-            <div class="card-body">
-              <h4 class="card-title">ほのむ英会話</h4>
-              <p class="card-text">アットホームをイメージして作成しました。複数人で作成した作品でもあり、とても印象に残っております。</p>
-              <a href="miyamoto_kogyo/index.html" class="btn btn-primary">Check!!</a>
-              <a href="works.html" class="more" target="_blank">more>></a>
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/DIGSMILE.inc_p.png" class="card-img-top" alt="DIGSMILE.inc画像" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">DIGSMILE.inc</h4>
+                <p class="card-text">デザイン会社をイメージして
+                作成致しました。[ABOUT][CONTACT]ページも作成しておりますので[READ MORE]より是非ご覧下さい。
+                </p>
+                <a href="DIGSMILE.inc/index.html" class="btn btn-primary">Check!!</a>
+                <a href="corporate.html" class="more" target="">Corporate-site>></a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
+      
+      <div class="fadeInUp">
+        <div class="work_container1">
+
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/yami.jpg" class="card-img-top" alt="闇属性限定ガチャバナー" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">闇属性限定ガチャ</h4>
+                <p class="card-text">ガチャの広告バナーをイメージして作成しました。キャラクターは下記ページ素材を活用させていただきました。
+                  <span class="jewel"><a href="http://www.jewel-s.jp/">[ジュエルセイバーFREE]様</a></span>
+                </p>
+                <a href="img/yami.jpg" class="btn btn-primary">Check!!</a>
+                <a href="bana.html" class="more" target="">banner>></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/maya1.png" class="card-img-top" alt="小菅工務店画像" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">Maya制作</h4>
+                <p class="card-text">神殿・机・本・大剣・キャラクター<br>
+                  MayaLTを用いてモデリング致しました。<br>
+                  これからもMaya勉学続けて参ります！
+                </p>
+                <a href="mp4/maya1.mp4" class="btn btn-primary">Check!!</a>
+                <a href="illustration.html" class="more" target="">illustration>></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/ON_STAGE.gif" class="card-img-top" alt="ON-STAGEgif画像" height="250px">
+              <div class="card-body">
+                <h4 class="card-title">ON-STAGE!MOVIE</h4>
+                <p class="card-text">
+                  AfterEffectsを用いて作成<br>
+                  ON-STAGE!公式サイトのトップを飾るMOVIEです。ジャンルは音楽アドベンチャーゲームです。
+                </p>
+                <a href="mp4/Main.mp4" class="btn btn-primary">Check!!</a>
+                <a href="animation.html" class="more" target="">animation>></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="fadeInUp">
+        <div class="work_container1">
+          
+          <div class="work_items">
+            <div class="card" style="width: 320px;">
+              <img src="img/grassland.gif" class="card-img-top" alt="..." height="250px">
+              <div class="card-body">
+                <h4 class="card-title">3D草原ステージ</h4>
+                <p class="card-text">unityを用いて作成しました。動画の紹介になります、実際はBGMも流れており移動やジャンプ、カメラリバースも自由自在です。
+                </p>
+                <a href="game/grassland.mp4" class="btn btn-primary">Check!!</a>
+                <a href="game.html" class="more" target="">game>></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
 
     </section>
 
     <!-- contact -->
-    <section id="contact">
-      <h2 class="ttl">contact</h2>
-      <p class="text">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。
-        下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。
-      </p>
-      <div class="container mt-5">
-        <form class="needs-validation" action="" method="post" novalidate>
-
-          <div class="form-group col-md-6">
-            <label for="myname">貴社名</label>
-            <input class="form-control" type="text" name="myname" id="myname">
-            <p class="invalid-feedback">貴社名を入力してください</p>
+    <div class="contact-wrapper">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="img/top_image8.jpg">
+        <section id="contact">
+          <div class="fadeInUp">
+            <h2 class="ttl" style="color: antiquewhite;">contact</h2>
           </div>
-
-
-
-          <div class="form-group col-md-6">
-            <label for="inputname">お名前<span class="required">必須</span></label>
-            <input type="email" class="form-control" id="inputname">
+          <div class="fadeInUp">
+            <p class="text" style="color: antiquewhite;">制作の依頼・ご相談などお気軽にお問い合わせくださいませ。
+              下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。
+            </p>
           </div>
+          <div class="fadeInUp">
 
-          <div class="form-group col-md-6">
-            <label for="inputEmail">メールアドレス<span class="required">必須</span></label>
-            <input type="age" class="form-control" id="inputEmail">
-          </div>
+            <div class="container mt-5">
+              <form class="needs-validation" action="" method="post" novalidate>
 
-          <div class="form-group col-md-6">
-            <label for="inputTellNumber">電話番号</label>
-            <input type="text" class="form-control" id="inputTellNumber">
-          </div>
+                <div class="form-group col-md-15">
+                  <label for="myname">貴社名</label>
+                  <input class="form-control" type="text" name="myname" id="myname">
+                  <p class="invalid-feedback">貴社名を入力してください</p>
+                </div>
 
-          <div class="form-group col-md-6">
-            <label for="inputyour-message">お問い合わせ内容<span class="required">必須</span></label>
-            <!-- <input type="text" class="form-control" id="inputyour-message"> -->
 
-          </div>
-          <textarea name="" id="textarea" cols="25" rows="5"></textarea>
 
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                内容ご確認の上チェックお願いします
-              </label>
+                <div class="form-group col-md-15">
+                  <label for="inputname">お名前
+                    <!-- <span class="required">必須</span> -->
+                  </label>
+                  <input type="email" class="form-control" id="inputname">
+                </div>
+
+                <div class="form-group col-md-15">
+                  <label for="inputEmail">メールアドレス
+                    <!-- <span class="required">必須</span> -->
+                  </label>
+                  <input type="age" class="form-control" id="inputEmail">
+                </div>
+
+                <div class="form-group col-md-15">
+                  <label for="inputTellNumber">電話番号</label>
+                  <input type="text" class="form-control" id="inputTellNumber">
+                </div>
+
+                <div class="form-group col-md-15">
+                  <label for="inputyour-message">お問い合わせ内容
+                    <!-- <span class="required">必須</span>  -->
+                  </label>
+                  <!-- <input type="text" class="form-control" id="inputyour-message"> -->
+
+                </div>
+                <textarea name="" id="textarea" cols="25" rows="5"
+                  style="width: 100%; height: 114px; margin-top: -15px;"></textarea>
+
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      内容ご確認の上チェックお願いします
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary"><span>送信</span></button>
+              </form>
+
             </div>
+
           </div>
-          <button type="submit" class="btn btn-primary">送信</button>
-        </form>
-
+        </section>
       </div>
-
-
-    </section>
+    </div>
 
     <!-- toTop -->
     <p class="toTop">
@@ -217,7 +499,7 @@
         <li class="contact"><a href="#contact">contact</a></li>
       </ul>
     </nav>
-    <p id="copyright">Copyright&copy;KosugeYuki.All Rights Reserved.</p>
+    <p id="copyright">Copyright&copy;KY's.All Rights Reserved.</p>
   </footer>
 </body>
 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172927658-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172927658-2');
+</script>
+<meta name="google-site-verification" content="p-F0LCHUXVIm5TeYa43-zMU3a8Y30hZapQ1TiuvbSyo" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="salón de belleza美容院のサイトです。">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/works.css">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+
+  <title>portfolio LP-site</title>
+
+  <link rel="shortcut icon" href="img/salón de belleza.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <!-- フェードイン -->
+    <script>
+      $(function () {
+        function animation() {
+          $('.fadeInUp').each(function () {
+            //ターゲットの位置を取得
+            var target = $(this).offset().top;
+            //スクロール量を取得
+            var scroll = $(window).scrollTop();
+            //ウィンドウの高さを取得
+            var windowHeight = $(window).height();
+            //ターゲットまでスクロールするとフェードインする
+            if (scroll > target - windowHeight) {
+              $(this).css('opacity', '1');
+              $(this).css('transform', 'translateY(0)');
+            }
+          });
+        }
+        animation();
+        $(window).scroll(function () {
+          animation();
+        });
+      });
+    </script>
+</head>
+
+
+
+<body id="top">
+  <!-- header -->
+  <header>
+    <h1 class="container-left"><a href="index.html"><img src="img/logo_portfolio1.jpg" alt="KY'sPORTFOLIO" width="200px" height="25px"></a></h1>
+
+
+<!-- <div class="side">
+  <nav class="sticky">
+    <div class="container-light">
+      <ul class="cf">
+        <li class="about"><a href="#about">about</a></li>
+        <li class="skill"><a href="#skill">skill</a></li>
+        <li class="work"><a href="#work">work</a></li>
+        <li class="contact"><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div> -->
+
+<ul class="socialBtn">
+  <li><a href="http://github.com/yukikosuge " target="_blank"><img src="img/github.svg" alt="githubアイコン" width="22px" height="22px"></a></li>
+</ul>
+
+  </header>
+  <!-- main -->
+  <div id="main">
+    <!-- main-image -->
+    <!-- <section id="main-image">
+      <div class="pc"><img src="img/squirrel1.jpg" alt=""></div>
+      <div class="sp"><img src="img/squirrel.jpg" alt=""></div>
+    </section> -->
+
+    
+    
+    <!-- works -->
+    <div class="worksinner">
+
+      <section id="work">
+        <div class="fadeInUp">
+          <h2 class="ttl">works</h2>
+          <p class="text">LPサイト作品一覧</p>
+        </div>
+        
+        <div class="fadeInUp">
+
+        <div class="work_container">
+
+          <div class="work_items">
+            <div class="card" style="width: 12rem;">
+              <img src="img/ON_STAGE_p.png" class="card-img-top" alt="おんすてーじ！画像" height="130px">
+              <div class="card-body">
+                <h4 class="card-title">ON-STAGE!<br>公式サイト</h4>
+                <p class="card-text">架空のゲームをイメージして<br>
+                  公式サイトを作成致しました。様々なツールを用いて制作、ティザーサイト作品の最新作です。
+                </p>
+                <a href="ON_STAGE/index.html" class="btn btn-primary">Check!!</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="work_items">
+            <div class="card" style="width: 12rem;">
+              <img src="img/salón de belleza.min.png" class="card-img-top" alt="サロン・デ・ベジェッサ画像" height="130px">
+              <div class="card-body">
+                <h4 class="card-title">salón de belleza</h4>
+                <p class="card-text">アットホームな美容室をイメージして作成しました。<br>色合いも落ち着いた配色メインにしました。</p>
+                <a href="salón de belleza/index.html" class="btn btn-primary">Check!!</a>
+              </div>
+            </div>
+          </div>
+          
+
+            
+
+
+              <!-- <div class="work_items">
+                <div class="card" style="width: 12rem;">
+                  <img src="img/day.png" class="card-img-top" alt="デイサービス画像" height="130px">
+                  <div class="card-body">
+                    <h4 class="card-title">ｷｮｳﾘﾂ･ﾃﾞｲ･ｻｰﾋﾞｽ</h4>
+                    <p class="card-text">ご高齢の方が見ても違和感のないように意識しました。和風テイストのテクスチャを用いて作成しております。</p>
+                      <a href="kyouritz-dayservice/home.html" class="btn btn-primary">Check!!</a>
+                    </div>
+                  </div>
+                </div> -->
+
+
+            </div>
+
+            <div class="work_container">
+
+                
+  
+                  <!-- <div class="work_items">
+                    <div class="card" style="width: 12rem;">
+                      <img src="img/wat.png" class="card-img-top" alt="アンコールワット画像" height="130px">
+                      <div class="card-body">
+                        <h4 class="card-title">アンコールワット</h4>
+                        <p class="card-text">大きめのサイズ感で誰が見てもわかるよう意識作成しました。<br>
+                        画面いっぱいの当作品はインパクトがとても強い印象です。</p>
+                          <a href="angkor-wat/angkor-wat2.html" class="btn btn-primary">Check!!</a>
+                        </div>
+                      </div>
+                    </div> -->
+    
+                      <!-- <div class="work_items">
+                        <div class="card" style="width: 12rem;">
+                          <img src="img/dummy1.png" class="card-img-top" alt="..." height="130px">
+                          <div class="card-body">
+                            <h4 class="card-title">工事中</h4>
+                            <p class="card-text">工事中<br>
+                              
+                            </p>
+                              <a href="#" class="btn btn-primary" target="_blank">Check!!</a>
+                            </div>
+                          </div>
+                        </div> -->
+
+                      <!-- <div class="work_items">
+                        <div class="card" style="width: 12rem;">
+                          <img src="img/dummy1.png" class="card-img-top" alt="..." height="130px">
+                          <div class="card-body">
+                            <h4 class="card-title">工事中</h4>
+                            <p class="card-text">工事中<br>
+                              
+                            </p>
+                              <a href="#" class="btn btn-primary" target="_blank">Check!!</a>
+                            </div>
+                          </div>
+                        </div> -->
+                </div>
+            
+          </section>
+        </div>
+          
+  
+    <!-- toTop -->
+    <p class="toTop">
+      <a href="#top">
+        <img src="img/icon_totop.gif" alt="" width="22" height="14">
+      </a>
+    </p>
+
+  </div>
+  <!-- footer -->
+  <footer class="cf">
+    <!-- <nav class="footer">
+      <ul class="cf">
+        <li class="about"><a href="#about">about</a></li>
+        <li class="skill"><a href="#skill">skill</a></li>
+        <li class="work"><a href="#work">work</a></li>
+        <li class="contact"><a href="#contact">contact</a></li>
+      </ul>
+    </nav> -->
+    <p id="gohome"><a href="index.html">back>></a></p>
+    <p id="copyright">Copyright&copy;KY's.All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
