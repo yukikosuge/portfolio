@@ -2,27 +2,67 @@
 <html lang="ja">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172927658-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172927658-2');
+</script>
+<meta name="google-site-verification" content="p-F0LCHUXVIm5TeYa43-zMU3a8Y30hZapQ1TiuvbSyo" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ページ説明文のサンプルテキスト">
+  <meta name="description" content="salón de belleza美容院のサイトです。">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/works.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 
-  <title>portfolio works bana</title>
+  <title>portfolio works banner</title>
+
+  <link rel="shortcut icon" href="img/salón de belleza.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <!-- フェードイン -->
+    <script>
+      $(function () {
+        function animation() {
+          $('.fadeInUp').each(function () {
+            //ターゲットの位置を取得
+            var target = $(this).offset().top;
+            //スクロール量を取得
+            var scroll = $(window).scrollTop();
+            //ウィンドウの高さを取得
+            var windowHeight = $(window).height();
+            //ターゲットまでスクロールするとフェードインする
+            if (scroll > target - windowHeight) {
+              $(this).css('opacity', '1');
+              $(this).css('transform', 'translateY(0)');
+            }
+          });
+        }
+        animation();
+        $(window).scroll(function () {
+          animation();
+        });
+      });
+    </script>
 
 </head>
+
+
 
 <body id="top">
   <!-- header -->
   <header>
-    <h1 class="container-left"><a href="index.html">Kosuge Yuki portfolio</a></h1>
+    <h1 class="container-left"><a href="index.html"><img src="img/logo_portfolio1.jpg" alt="KY'sPORTFOLIO" width="200px" height="25px"></a></h1>
 
 
 <!-- <div class="side">
@@ -39,7 +79,7 @@
 </div> -->
 
 <ul class="socialBtn">
-  <li><a href="http://github.com/yukikosuge " target="_blank"><img src="img/github.svg" alt="" width="22px" height="22px" target="_blank"></a></li>
+  <li><a href="http://github.com/yukikosuge " target="_blank"><img src="img/github.svg" alt="githubアイコン" width="22px" height="22px" target="_blank"></a></li>
 </ul>
 
   </header>
@@ -52,105 +92,153 @@
     </section> -->
 
     
+
+    
     
     <!-- works -->
     <div class="worksinner">
 
       <section id="work">
-        <h2 class="ttl">works</h2>
-        <p class="text">バナー一覧</p>
+        <div class="fadeInUp">
+          <h2 class="ttl">works</h2>
+          <p class="text">バナー一覧</p>
+        </div>
+        
+        <div class="fadeInUp">
         <div class="work_container">
-          
-          <div class="work_items">
-            <div class="card" style="width: 12rem;">
-              <img src="img/「みんなで温泉に行こう！」.png" class="card-img-top" alt="..." height="130px">
-              <div class="card-body">
-                <h4 class="card-title">「みんなで温泉に行こう！」</h4>
-                <p class="card-text">旅行サイトなどでよく見かけるバナーをイメージして作成しました。</p>
-                  <a href="img/「みんなで温泉に行こう！」.png" class="btn btn-primary" >Check!!</a>
+
+            <div class="work_items">
+              <div class="card" style="width: 12rem;">
+                <img src="img/yami.jpg" class="card-img-top" alt="闇属性限定ガチャバナー" height="130px">
+                <div class="card-body">
+                  <h4 class="card-title">闇属性限定ガチャ</h4>
+                  <p class="card-text">ガチャの広告バナーをイメージして作成しました。キャラクターは下記ページ素材を活用させていただきました。<br>
+                    <span class="jewel"><a href="http://www.jewel-s.jp/">[ジュエルセイバーFREE]様</a></span>
+                  </p>
+                  <a href="img/yami.jpg" class="btn btn-primary" >Check!!</a>
                 </div>
               </div>
             </div>
             
             <div class="work_items">
               <div class="card" style="width: 12rem;">
-                <img src="img/無料体験バナー.jpg" class="card-img-top" alt="..." height="130px">
+                <img src="img/mizugi.min.png" class="card-img-top" alt="夏休み限定水着ガチャバナー" height="130px">
                 <div class="card-body">
-                  <h4 class="card-title">「無料キャンペーン中」</h4>
-                  <p class="card-text">農業関連のサイトにてありそうなバナーをイメージして作成しました。</p>
-                    <a href="img/無料体験バナー.jpg" class="btn btn-primary">Check!!</a>
-                  </div>
+                  <h4 class="card-title">限定水着ガチャ</h4>
+                  <p class="card-text">ガチャの広告バナーをイメージして作成しました。キャラクターは下記ページ素材を活用させていただきました。<br>
+                    <span class="jewel"><a href="http://www.jewel-s.jp/">[ジュエルセイバーFREE]様</a></span>
+                  </p>
+                  <a href="img/mizugi.jpg" class="btn btn-primary">Check!!</a>
                 </div>
               </div>
-
-              <div class="work_items">
-                <div class="card" style="width: 12rem;">
-                  <img src="img/バナー募集バナー.jpg" class="card-img-top" alt="..." height="130px">
-                  <div class="card-body">
-                    <h4 class="card-title">「バナー広告募集中！」</h4>
-                    <p class="card-text">手芸教室サイトなどで見かけそうなバナーをイメージして作成しました。</p>
-                      <a href="img/バナー募集バナー.jpg" class="btn btn-primary">Check!!</a>
-                    </div>
-                  </div>
+            </div>
+            
+            <div class="work_items">
+              <div class="card" style="width: 12rem;">
+                <img src="img/「Merry-Christmas-SALE」.min.png" class="card-img-top" alt="クリスマスセールバナー" height="130px">
+                <div class="card-body">
+                  <h4 class="card-title">Christmas-SALE</h4>
+                  <p class="card-text">クリスマスシーズンのECサイトで掲載していそうなバナーをイメージして作成しました。<br>
+                    色合いもクリスマスを意識した配色となっております。
+                  </p>
+                  <a href="img/「Merry-Christmas-SALE」.jpg" class="btn btn-primary">Check!!</a>
                 </div>
-
-                  <div class="work_items">
-                    <div class="card" style="width: 12rem;">
-                      <img src="img/「Merry-Christmas-SALE」.jpg" class="card-img-top" alt="..." height="130px">
-                      <div class="card-body">
-                        <h4 class="card-title">「Christmas-SALE」</h4>
-                        <p class="card-text">クリスマスシーズンのECサイトで掲載していそうなバナーをイメージして作成しました。</p>
-                          <a href="img/「Merry-Christmas-SALE」.jpg" class="btn btn-primary">Check!!</a>
-                        </div>
-                      </div>
-                    </div>
+              </div>
             </div>
 
-            <div class="work_container">
-          
               <div class="work_items">
-                <div class="card" style="width: 12rem;">
-                  <img src="img/スタッフ募集バナー.jpg" class="card-img-top" alt="..." height="130px">
-                  <div class="card-body">
-                    <h4 class="card-title">「スタッフ募集」</h4>
-                    <p class="card-text">工場や倉庫関係のスタッフ募集サイトで見かけそうなバナーをイメージして作成しました。</p>
-                      <a href="img/スタッフ募集バナー.jpg" class="btn btn-primary">Check!!</a>
-                    </div>
-                  </div>
+    <div class="card" style="width: 12rem;">
+      <img src="img/dummy1.png" class="card-img-top" alt="..." height="130px">
+      <div class="card-body">
+        <h4 class="card-title">工事中</h4>
+        <p class="card-text">工事中<br>
+          
+        </p>
+          <a href="#" class="btn btn-primary" target="_blank">Check!!</a>
+        </div>
+      </div>
+    </div>
+              
+              
+            </div>
+          </div>
+          
+          <div class="work_container">
+            
+            <div class="work_items">
+              <div class="card" style="width: 12rem;">
+                <img src="img/Jobs_1.png" class="card-img-top" alt="転職バナー" height="130px">
+                <div class="card-body">
+                  <h4 class="card-title">転職バナー</h4>
+                  <p class="card-text">photoshopを用いて、<br>
+                    作成いたしました。<br>
+                    応募ボタンには目立つようにビビットを意識しております。
+                  </p>
+                  <a href="img/Jobs.jpg" class="btn btn-primary">Check!!</a>
                 </div>
-                
-                <div class="work_items">
-                  <div class="card" style="width: 12rem;">
-                    <img src="img/squirrel4.jpg" class="card-img-top" alt="..." height="130px">
+              </div>
+            </div>
+            
+            
+            <div class="work_items">
+              <div class="card" style="width: 12rem;">
+                    <img src="img/Meat_1.png" class="card-img-top" alt="..." height="130px">
                     <div class="card-body">
-                      <h4 class="card-title">工事中</h4>
-                      <p class="card-text">工事中</p>
-                        <a href="#" class="btn btn-primary">Check!!</a>
+                      <h4 class="card-title">焼肉屋バナー</h4>
+                      <p class="card-text">photoshopを用いて、
+                        作成いたしました。<br>
+                        焼肉屋さんの広告バナーになります。</p>
+                        <a href="img/Meat.jpg" class="btn btn-primary">Check!!</a>
                       </div>
                     </div>
                   </div>
     
                   <div class="work_items">
                     <div class="card" style="width: 12rem;">
-                      <img src="img/squirrel5.jpg" class="card-img-top" alt="..." height="130px">
+                      <img src="img/City_1.png" class="card-img-top" alt="..." height="130px">
                       <div class="card-body">
-                        <h4 class="card-title">工事中</h4>
-                        <p class="card-text">工事中</p>
-                          <a href="#" class="btn btn-primary">Check!!</a>
+                        <h4 class="card-title">不動産バナー</h4>
+                        <p class="card-text">photoshopを用いて、
+                          作成いたしました。<br>
+                          不動産賃貸の広告バナーになります。</p>
+                          <a href="img/City.jpg" class="btn btn-primary">Check!!</a>
                         </div>
                       </div>
                     </div>
     
                       <div class="work_items">
                         <div class="card" style="width: 12rem;">
-                          <img src="img/squirrel6.jpg" class="card-img-top" alt="..." height="130px">
+                          <img src="img/Hokkaido_1.png" class="card-img-top" alt="..." height="130px">
                           <div class="card-body">
-                            <h4 class="card-title">工事中</h4>
-                            <p class="card-text">工事中</p>
-                              <a href="#" class="btn btn-primary">Check!!</a>
+                            <h4 class="card-title">旅行バナー</h4>
+                            <p class="card-text">photoshopを用いて、
+                              作成いたしました。<br>
+                              旅行会社の広告バナーになります。</p>
+                              <a href="img/Hokkaido.jpg" class="btn btn-primary">Check!!</a>
                             </div>
                           </div>
                         </div>
+                </div>
+
+
+          <div class="work_container">
+            
+            <!-- <div class="work_items">
+              <div class="card" style="width: 12rem;">
+                <img src="img/Banner_v1.png" class="card-img-top" alt="デザイナーバナー" height="130px">
+                <div class="card-body">
+                  <h4 class="card-title">デザイナー講座バナー</h4>
+                  <p class="card-text">photoshopを用いて、<br>
+                    作成いたしました。<br>
+                    webデザイナー基本講座PRバナーとなります。
+                  </p>
+                  <a href="img/Banner_v1.png" class="btn btn-primary">Check!!</a>
+                </div>
+              </div>
+            </div> -->
+            
+            
+            
                 </div>
             
           </section>
@@ -175,8 +263,8 @@
         <li class="contact"><a href="#contact">contact</a></li>
       </ul>
     </nav> -->
-    <p id="gohome"><a href="works.html">back>></a></p>
-    <p id="copyright">Copyright&copy;KosugeYuki.All Rights Reserved.</p>
+    <p id="gohome"><a href="index.html">back>></a></p>
+    <p id="copyright">Copyright&copy;KY's.All Rights Reserved.</p>
   </footer>
 </body>
 
