@@ -2,6 +2,7 @@
 
 /* common.css
 ----------------------------------------- */
+
 body {
 	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
 	font-size: 14px;
@@ -11,8 +12,78 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+ .sample{
+    display: flex;  /* 横並びにする */
+    align-items: center;  /* 垂直方向に中央 */
+    text-align: center;  /* 文字のセンタリング(複数行になったとき用) */
+  }
+ 
+ 
+  /* 共通部分はまとめる */
+  .sample::before,
+  .sample::after{
+    content:"";
+    flex-grow: 1;  /* 線の伸び率 */
+    border-bottom: 1px solid #333;
+  }
+ 
+  /* 左側の線 */
+  .sample::before{
+    margin-right: 10px;  /* 線と文字の間のスペース */
+    padding-left: 15px;  /* 線の長さが、最低でも15px以上になるように余白をとる */
+  }
+ 
+  /* 右側の線 */
+  .sample::after{
+    margin-left: 10px;  /* 線と文字の間のスペース */
+    padding-right: 15px;  /* 線の長さが、最低でも15px以上になるように余白をとる */
+  }
+
+.wrapper{
+	background: #333;
+	margin-top: 120px;
+	padding-bottom: 120px;
+}
+
+.contact-wrapper{
+	margin-top: 88px;
+}
+
+#contact{
+	padding-bottom: 120px;
+}
+
+
+label{
+	color: antiquewhite;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	margin-top: 21px;
+}
+
+.card-body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem;
+	text-align: initial;
+}
+
+
 a {
 	color: #333;
+	text-decoration: none;
+}
+#work {
+	padding: 0;
+}
+
+#work .jewel a{
+	color:#333;
 	text-decoration: none;
 }
 
@@ -27,6 +98,8 @@ a:hover {
 
 .pc {
 	display: none;
+	background: #007bff;
+	height: 400px;
 }
 
 /* header
@@ -118,18 +191,34 @@ nav ul li a:hover{
 
 /* contents
 ----------------------------------------- */
-#main h2.ttl {
+#main h2.ttl1 {
   font-family: 'Lato', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 64px;
 	text-align: center;
 	line-height: 1.0;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 40px;
 	letter-spacing: 0.05em;
+	padding-top: 104px;
+	font-weight: 300;
 }
 
-#main h3.ttl {
+#main h2.ttl {
+  font-family: 'Lato', sans-serif;
+	margin-bottom: 64px;
+	text-align: center;
+	line-height: 1.0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 48px;
+	letter-spacing: 0.05em;
+	padding-top: 120px;
+	font-weight: 300;
+}
+
+
+#main .ttl {
 	margin-bottom: 12px;
 	text-align: center;
 	line-height: 1.0;
@@ -149,7 +238,7 @@ nav ul li a:hover{
 }
 
 .work_container{
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .aboutcontainer .icon img{
@@ -157,6 +246,7 @@ nav ul li a:hover{
 }
 
 .toTop {
+	margin-top: 120px;
 	text-align: center;
 }
 
@@ -192,6 +282,14 @@ nav.footer {
 .pc {
 	display: block;
 }
+
+.pc img {
+	/* display: block; */
+	width: 100% !important;
+	height: ;
+}
+
+
 
 /* header
 ----------------------------------------- */
@@ -264,13 +362,14 @@ nav ul li a {
 
 .aboutcontainer{
   display: flex;
-  justify-content: space-around;
+	justify-content: space-around;
+	padding: 0 30px;
 }
 
 #main-image img {
-  width: 100%;
-  max-width: 960px;
-  height: auto;
+
+	max-width: 1440px;
+	max-height: 500px;
 }
 
 /* contents
@@ -280,9 +379,16 @@ nav ul li a {
 }
 
 .work_container{
-  padding: 0 30px;
+	padding: 0 210px;
+	margin-bottom: -10px;
   display: flex;
-  justify-content: space-around;
+	justify-content: space-around;
+}
+
+.work_container1{
+	padding: 0 210px;
+  display: flex;
+	justify-content: space-around;
 }
 
 /* footer
@@ -356,6 +462,22 @@ nav {
   opacity: 0.6;
 }
 
+#design {
+	width: 450px;
+}
+
+#direction{
+	width: 450px;
+}
+
+#coding {
+	width: 450px;
+}
+
+form.needs-validation {
+  margin: 0 312px;
+}
+
 /* footer
 ----------------------------------------- */
 footer {
@@ -365,15 +487,16 @@ footer {
 
 nav.footer {
 	margin-left: 0;
+	width: 100%;
+	text-align: center;
 }
 
 #copyright {
-	float: right;
-	width: 40%;
-	margin-top: 32px;
-	margin-bottom: 0;
-  text-align: right;
-  padding-top: 62px;
+	float: left;
+	width: 100%;
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 0px;
 }
 
 } /* PC向け */
